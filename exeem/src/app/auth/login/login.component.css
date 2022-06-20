@@ -1,0 +1,43 @@
+/* start login */
+.imageLogo{
+  width: 343px;
+  height: 118px;
+  margin-top: 90px;
+}
+
+.textLogin{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 44px;
+  color: black;
+  margin-top: 30px;
+}
+
+.forgetPassword{
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-right: 45%;
+}
+
+.textLog{
+  font-weight: 400;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.haveAccount{
+  color: #b3acac;
+}
+
+.imgLogin{
+  width: 100%;
+  height: 600px;
+}
+
+@media (max-width:768px) {
+  .imgLogin{
+    display: none;
+  }
+}
+/* end login */
