@@ -1,0 +1,77 @@
+  <!-- start header -->
+  <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top m-0 p-1">
+    <div class="container">
+        <i class="fas fa-bars  fa-2x mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+        <a routerLink="/home"> <img class="logo-navbar p-1" src="assets/images/logo/logo.png" width="130" height="60"
+                alt="image logo" loading="lazy"> </a>
+        <div class="offcanvas offcanvas-end" id="demo">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title"><a routerLink="/home"> <img src="assets/images/logo/logo.png" width="80"
+                            height="60" alt="image menu" loading="lazy"></a></h1>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button> -->
+                <i class="fa fa-times text-white" data-bs-dismiss="offcanvas"></i>
+            </div>
+            <div class="offcanvas-body col justify-content-md-between">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/login">من نحن</a>
+                    </li>
+                    <!-- dropdown categories -->
+                    <li>
+                      <div class="dropdown">
+                          <button class="mt-2 dropbtn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              الخدمات
+                          </button>
+                          <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1">
+                              <li>
+                                <a class="dropdown-item" routerLink="">
+                                  الخدمات
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" routerLink="">
+                                  المنتجات
+                                </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="">شاتكس</a>
+                    </li>
+                    <!-- dropdown language -->
+                    <!-- <li>
+                        <div class="dropdown">
+                            <button class="mt-2 dropbtn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="./ar/index.html">
+                                        <img class="m-1" width="20" height="20"
+                                            src="https://wallpaperaccess.com/full/139859.jpg" alt="flag egypt"
+                                            loading="lazy"> عربى</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="">أتصل بنا</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="auth">
+          <!-- button login -->
+          <button class="btnLogin" onclick="window.location.href='/login'">دخـول</button>
+          <!-- button login free -->
+          <button class="btnLoginFree" onclick="window.location.href=''">سجل الأن مجانا</button>
+        </div>
+    </div>
+  </nav>
+  <!--end header  -->
