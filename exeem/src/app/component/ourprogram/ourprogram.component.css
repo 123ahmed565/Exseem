@@ -1,0 +1,53 @@
+
+.ourProgram{
+  margin-top: 30px;
+}
+
+.program{
+  margin-top: 30px;
+  position: relative;
+}
+
+.data{
+  position: absolute;
+  max-width: 540px;
+  top:20%;
+  right: 10%;
+}
+
+.data2{
+  position: absolute;
+  max-width: 600px;
+  top:20%;
+  left: 10%;
+}
+
+.titleOurProgram{
+  color: var(--primary);
+  font-size: 30px;
+}
+
+.line{
+  border: 2px solid var(--colorText);
+  width: 15%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.subTitle{
+  font-size: 16px;
+}
+
+.imageProgram{
+  width: 300px;
+  height: 350px;
+}
+
+.textTitle{
+  color: var(--colorText);
+  font-size: 25px;
+}
+
+.textTitle2{
+  font-size: 17px;
+}

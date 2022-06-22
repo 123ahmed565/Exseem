@@ -1,0 +1,44 @@
+/* start apply now */
+.applyNow{
+  background-color: var(--primary);
+  margin-top: 30px;
+  padding: 20px;
+  position: relative;
+}
+
+.desApply{
+  position: absolute;
+  top:25%;
+  right: 10%;
+}
+
+.TitleApply{
+  font-size: 30px;
+}
+
+.desApply{
+  color: white;
+}
+
+.btnApply{
+  border: none;
+  background-color: var(--primary);
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  box-shadow: none !important;
+  font-weight: 500;
+}
+
+.btnApply:hover{
+  background-color: var(--colorText);
+  border: 1px solid var(--colorText);
+  transition: .2s all ease-in;
+}
+
+.imageApply{
+  width: 250px;
+  height: 250px;
+}
+/* end apply now */
