@@ -28,7 +28,7 @@ export class OurservicesComponent implements OnInit {
             spaceBetween: 20,
         },
         1000: {
-            slidesPerView: 6.5,
+            slidesPerView: 6,
             spaceBetween: 20,
         },
     },
