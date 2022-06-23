@@ -164,3 +164,35 @@ input[type=submit]:hover {
   }
 }
 /* end global features */
+
+
+/* start top button */
+.scroll-to-top{
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  border-radius: 10%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background:var(--colorText);
+  border: none;
+  transition-duration: 500ms;
+  z-index: 2;
+}
+
+.scroll-to-top:hover{
+  background: var(--primary);
+  transition: .3s all ease-in-out;
+}
+
+@media (max-width:768px) {
+  .scroll-to-top{
+      left: 20px;
+      bottom: 60px;
+      width: 40px;
+      height: 40px;
+  }
+}
+/* end top button */

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ForgetpasswordComponent } from './auth/forgetpassword/forgetpassword.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [

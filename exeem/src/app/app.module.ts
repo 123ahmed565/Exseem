@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { OurprogramComponent } from './component/ourprogram/ourprogram.component';
 import { OurservicesComponent } from './component/ourservices/ourservices.component';
+import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +25,12 @@ import { OurservicesComponent } from './component/ourservices/ourservices.compon
     FooterComponent,
     OurprogramComponent,
     OurservicesComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
