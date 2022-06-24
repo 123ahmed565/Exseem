@@ -4,14 +4,25 @@
     <!-- data login -->
     <div class="col-12 col-md-6">
       <img class="imageLogo mx-auto d-block" src="assets/images/logo/logo.png" alt="logo image" loading="lazy">
-      <form action="" class="text-center">
+      <form class="text-center" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
         <h1 class="textLogin">تسجيل الدخول</h1>
-        <input type="text" name="" id="" placeholder="الايميل">
-        <input type="password" name="" id="" placeholder="كلمة السر">
+
+        <div class="form-group">
+          <input formControlName="email" type="text" id="email" placeholder="الايميل">
+          <br>
+          <small *ngIf="loginForm.get('email')?.invalid &&loginForm.get('email')?.touched" class="text-danger">برجاء ادخال البريد الالكتروني</small>
+        </div>
+
+        <div class="form-group">
+          <input formControlName="password" type="password" id="passowrd" placeholder="كلمة السر">
+          <br>
+          <small *ngIf="loginForm.get('password')?.invalid &&loginForm.get('password')?.touched" class="text-danger">برجاء ادخال كلمة السر </small>
+        </div>
+
         <a routerLink="/forgetpassword">
           <h1 class="forgetPassword">نسيت كلمة سر!</h1>
         </a>
-        <input class="mt-4" type="submit" name="" id="" value="تسجيل الدخول">
+        <button class="btn mt-4" type="submit">تسجيل الدخول</button>
         <a routerLink="/register">
           <h1 class="textLog mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="ليس لدى حساب؟ انشاء حساب جديد">
             <span class="haveAccount"> ليس لدى حساب؟</span>  أنشاء حساب جديد
