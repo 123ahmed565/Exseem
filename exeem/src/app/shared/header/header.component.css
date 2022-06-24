@@ -155,3 +155,47 @@ background-color: var(--primary);
   }
 }
 /* end navbar canvas */
+
+
+
+/* start preloader */
+.loading-overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: white;
+}
+.loading-overlay .image-load{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: contain;
+  transform: translate(-50%,-50%);
+  opacity: 1;
+  animation-name: lds-heart;
+  animation-iteration-count: infinite;
+  background-color: white;
+}
+
+@media (max-width:768px) {
+  .loading-overlay .image-load{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      object-fit: contain;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 1;
+      animation-name: lds-heart;
+      animation-iteration-count: infinite
+  }
+}
+/* end preloader */
