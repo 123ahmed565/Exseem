@@ -1,0 +1,97 @@
+
+.ntitle{
+  font-size:40px;
+  font-weight: 700;
+}
+.npic{
+  height: 160px;
+  width: 100%;
+  margin-top: 50px;
+}
+.button{
+  background-color: var(--primary);
+  border-radius: 15px;
+  width: 300px;
+  margin-top: 10px;
+}
+.ndesc{
+  font-size: 20px;
+  font-weight: 500;
+  color:black;
+}
+.hr{
+  margin-bottom: -20px;
+}
+.right{
+  position: absolute;
+  right: 200px;
+}
+.rtitle{
+  font-size: 25PX;
+}
+.rdesc{
+  margin-bottom: 0;
+}
+.left{
+  left: 200px;
+}
+.inf{
+  float: left;
+  position: relative;
+  margin: 0 30px;
+}
+.navs,.row{
+  width: 100%;
+}
+.rc{
+  flex-direction: column;
+  display: flex;
+text-align: center;}
+.roww{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nic{
+  position: absolute;
+  top: 35%;
+  left: 102%;
+}
+.no{
+  display: none;
+}
+@media (max-width:1045px) {
+  .ntitle{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .npic{
+    margin: 0;
+  }
+  .ndesc{
+margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+  }.rdesc{
+    display: none;
+  }
+.roww{
+  flex-direction: column;
+padding: 15px 60px 0 0 ;
+
+}
+.nic{
+  margin-right: 30px;
+}
+.no{
+  display: block;
+}
+.ninfo h5{
+  font-size: 15px;
+}
+.ninfo h4{
+  font-size: 20px;
+}
+}
+

@@ -28,6 +28,15 @@ const routes: Routes = [
     path:'forgetpassword',
     component:ForgetpasswordComponent,
   },
+  {
+    path:'notfound',
+    component:PagenotfoundComponent,
+  },
+  {
+    path:'**',
+    redirectTo:'notfound',
+
+  },
 ];
 
 @NgModule({
