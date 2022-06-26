@@ -9,21 +9,25 @@
 
         <div class="form-group">
           <input formControlName="email" type="email" id="" placeholder="الايميل" required>
+          <br>
           <small *ngIf="registerForm.get('email')?.invalid &&registerForm.get('email')?.touched" class="text-danger">برجاء ادخال البريد الالكتروني   </small>
         </div>
 
         <div class="form-group">
           <input formControlName="phone" type="text" id="phone" placeholder="رقم الهاتف" required>
+          <br>
           <small *ngIf="registerForm.get('phone')?.invalid &&registerForm.get('phone')?.touched" class="text-danger">برجاء ادخال رقم الهاتف  </small>
         </div>
 
         <div class="form-group">
           <input formControlName="password" type="password" name="" id="" placeholder="كلمة السر" required>
+          <br>
           <small *ngIf="registerForm.get('password')?.invalid &&registerForm.get('password')?.touched" class="text-danger">برجاء كتابة كلمة السر</small>
         </div>
 
         <div class="form-group">
           <input formControlName="authpassword" type="password" name="" id="" placeholder="اعادة كتابة كلمة السر" required>
+          <br>
           <small *ngIf="registerForm.get('authpassword')?.invalid &&registerForm.get('authpassword')?.touched" class="text-danger">برجاء اعادة كتابة كلمة السر</small>
         </div>
 
