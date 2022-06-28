@@ -1,66 +1,64 @@
 
 <app-header></app-header>
 
-<div class="container text-center">
-  <img src="assets/images/pagenotfound/error-404.svg" class="npic" alt="error image 404">
-  <h1 class="ntitle mt-5">عذراً، حدث خطأ ما!</h1>
-  <p class="ndesc">تابع التصفح لتصل إلى ما تريد</p>
-  <button class="btn btn-primary button" onclick="window.location.href='/home'">
-    العوده الي الصفحه الرئيسية
-  </button>
-</div>
-<hr>
-<div class="navs">
-    <div class="row">
-      <div class="col-12 col-md-5">
-        <div class="rc">
-          <h2 class="rtitle">نحن دائماً جاهزون لمساعدتك</h2>
-          <p class="rdesc">تواصل معنا من خلال أي من قنوات الدعم التالية:</p>
+<div class="pageNotFound">
+  <div class="container text-center">
+    <img class="imageError" src="assets/images/pagenotfound/error-404.svg" alt="error image 404" loading="lazy">
+    <h1 class="ntitle mt-3 md:mt-5">عذراً، حدث خطأ ما!</h1>
+    <p class="ndesc">تابع التصفح لتصل إلى ما تريد</p>
+    <button class="button mt-4 md:mt-0" onclick="window.location.href='/home'">
+      العودة الي الصفحه الرئيسية
+    </button>
+  </div>
+  <hr>
+  <div class="navs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="rc mt-3">
+            <h2 class="rtitle">نحن دائماً جاهزون لمساعدتك</h2>
+            <p class="rdesc">تواصل معنا من خلال أي من قنوات الدعم التالية:</p>
+          </div>
         </div>
-        </div>
-      <div class="col-12 col-md-7 ">
-        <div class="roww">
-          <div class="inf">
-            <div class="nic">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 20 20">
+        <div class="col-12 col-md-6">
+          <div class="dataNotFound d-flex justify-content-between align-items-center">
+            <div class="dataNotFound2 d-flex justify-content-center align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 20 20">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                 <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
               </svg>
+              <div class="d-block me-3 mt-0 md:mt-3">
+                <h1 class="title">مركز المساعدة</h1>
+                <p class="subTitle"><a href="mailto:info@help.exceem.com">info@help.exceem.com</a></p>
+              </div>
             </div>
-            <div class="ninfo">
-              <h5>مركز المساعده</h5>
-              <h4> <a href="mailto:info@help.exceem.com">info@help.exceem.com</a></h4>
-            </div>
-          </div>
-          <hr class="no">
-          <div class="inf">
-            <div class="nic">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+
+            <div class="dataNotFound2 d-flex justify-content-center align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                 <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
               </svg>
+              <div class="d-block me-3 mt-0 md:mt-3">
+                <h1 class="title">للدعم بالبريد الالكتروني</h1>
+                <p class="subTitle"><a href="mailto:info@exceem.com">info@egypt@exceem.com</a></p>
+              </div>
             </div>
-            <div class="ninfo">
-              <h5>للدعم بالبريد الالكتروني</h5>
-              <h4><a href="mailto:info@egypt@exceem.com">info@egypt@exceem.com</a></h4>
-            </div>
-          </div>
-          <hr class="no">
 
-          <div class="inf">
-            <div class="nic">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <div class="dataNotFound2 d-flex justify-content-center align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
               </svg>
-            </div>
-            <div class="ninfo">
-              <h5>الدعم عبر الهاتف</h5>
-              <h4><a href="tel:+18475555555">1555</a></h4>
+              <div class="d-block me-3 mt-0 md:mt-3">
+                <h1 class="title">الدعم عبر الهاتف</h1>
+                <p class="subTitle"><a href="tel:+18475555555">1555</a></p>
+              </div>
             </div>
           </div>
-        </div>
+
+
         </div>
       </div>
+    </div>
   </div>
-<hr class="hr">
+</div>
 
 <app-footer></app-footer>
