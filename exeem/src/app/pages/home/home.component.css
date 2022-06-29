@@ -1,7 +1,7 @@
 /* start apply now */
 .applyNow{
   background-color: var(--primary);
-  margin-top: 30px;
+  margin-top: 60px;
   padding: 20px;
   position: relative;
 }
@@ -14,6 +14,11 @@
 
 .TitleApply{
   font-size: 30px;
+  color: var(--colorText);
+}
+
+.subTitleApply{
+  color: #949da6;
 }
 
 .desApply{
@@ -22,24 +27,27 @@
 
 .btnApply{
   border: none;
-  background-color: var(--primary);
-  border: 1px solid white;
+  background-color: var(--colorText);
+  border: 1px solid var(--colorText);
   color: white;
-  border-radius: 15px;
-  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 10px 50px;
   box-shadow: none !important;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .btnApply:hover{
-  background-color: var(--colorText);
-  border: 1px solid var(--colorText);
+  background-color: white;
+  border: 1px solid white;
+  color: black;
   transition: .2s all ease-in;
 }
 
 .imageApply{
-  width: 250px;
-  height: 250px;
+  width: 317px;
+  height: 350px;
+  object-fit: contain;
 }
 
 @media (max-width:768px) {

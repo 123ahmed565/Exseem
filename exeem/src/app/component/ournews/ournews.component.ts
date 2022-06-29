@@ -4,13 +4,12 @@ import SwiperCore, {Autoplay} from 'swiper';
 SwiperCore.use([Autoplay]);
 import Swiper, { SwiperOptions } from 'swiper';import { SwiperComponent } from 'swiper/angular';
 
-
 @Component({
-  selector: 'app-ourservices',
-  templateUrl: './ourservices.component.html',
-  styleUrls: ['./ourservices.component.css']
+  selector: 'app-ournews',
+  templateUrl: './ournews.component.html',
+  styleUrls: ['./ournews.component.css']
 })
-export class OurservicesComponent implements OnInit {
+export class OurnewsComponent implements OnInit {
 
   @ViewChild('swiperSlideShow') swiperSlideShow!: SwiperComponent;
   config: SwiperOptions = {};
@@ -28,7 +27,6 @@ export class OurservicesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
   }
 
 }

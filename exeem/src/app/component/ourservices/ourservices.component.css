@@ -2,82 +2,75 @@
   margin-top: 30px;
 }
 
-
-.data {
-  cursor: pointer;
-  color: black;
-  /* justify-content: center; */
-  text-align: center;
+.mostDepartment{
+  background-color: var(--primary);
+  border-radius: 30px;
+  margin-top: 30px;
 }
 
-.imageData{
-  display: inline-block;
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  border: 2px solid black;
-  padding: 5px;
+.buttonAlign{
+  margin-right: 30px;
 }
 
-.imageData:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+  border-radius: 6px !important;
+  border-radius: 6px !important;
 }
 
-.stitle{
+.btn-group-vertical>.btn~.btn {
+  border-radius: 6px !important;
+  border-radius: 6px !important;
+}
+
+.btnDepartment{
+  padding: 10px 60px;
+  background-color: #33465a;
+  font-weight: 400;
+}
+
+.btnDepartment:hover,.icon:hover{
+  padding: 10px 60px;
+  background-color: white !important;
+  color: black !important;
+  font-weight: 400;
+}
+
+.text1{
+  color: white;
   font-weight: 600;
-  margin-top: 7px;
+  font-size: 23px;
 }
 
-.mpic{
-  height: 250px;
-  width: 300px;
-  border-radius: 10px;
-  float: left;
-}
-.container{
-  display: flex;
-}
-.mtitle{
+.text2{
   color: var(--colorText);
-  font-size: 25px;
-}
-.desc{
-  text-align: right;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 25px;
 }
 
-.line{
+.subTitle{
+  color: #949da6;
+}
+
+.swiperDepartment{
   border: 2px solid var(--primary);
-  width: 30%;
-  margin-top: 10px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+.imgSale{
+  width: 143px;
+  height: 143px;
+}
+
+.btnDep{
+  border: none;
+  background-color: var(--colorText);
+  color: white;
   border-radius: 3px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  font-weight: 500;
+  box-shadow: none !important;
 }
 
-.modal-body {
-  padding: 2rem !important;
-  border-radius: 40px !important;
+.textSwiper{
+  font-size: 14px;
 }
-
-.modal-content {
-  border-radius: 1.3rem !important;
-}
-
-@media (max-width:768px) {
-  .imageData{
-    height: 90px;
-    width: 90px;
-  }
-  .mpic{
-    height: 200px;
-  }
-  .stitle{
-    text-align: center;
-  }
-  .data{
-    text-align: center;
-  }
-
-}
-

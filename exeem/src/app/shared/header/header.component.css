@@ -64,7 +64,7 @@ background-color: var(--primary);
   border: none;
   color: black;
   border: 1px solid var(--primary);
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 5px 15px;
   background: none;
   box-shadow: none !important;
@@ -83,7 +83,7 @@ background-color: var(--primary);
 .btnLoginFree{
   border: none;
   color: white;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 5px 15px;
   border: 1px solid var(--colorText);
   background-color: var(--colorText);

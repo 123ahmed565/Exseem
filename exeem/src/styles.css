@@ -65,7 +65,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb{
-  background:linear-gradient(var(--primary),var(--colorText));
+  background:var(--colorText);
   border-radius: 8px;
 }
 

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { SwiperModule } from 'swiper/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
@@ -13,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { OurprogramComponent } from './component/ourprogram/ourprogram.component';
 import { OurservicesComponent } from './component/ourservices/ourservices.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
+import { OurnewsComponent } from './component/ournews/ournews.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +28,14 @@ import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.com
     OurprogramComponent,
     OurservicesComponent,
     PagenotfoundComponent,
+    OurnewsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
