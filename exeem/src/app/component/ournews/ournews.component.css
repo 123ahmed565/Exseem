@@ -55,12 +55,30 @@
 .subTitle{
   font-size: 15px;
   font-weight: 400;
+  text-align: start;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.showAll{
+  font-size: 12px;
+}
+
+.readMore{
+  cursor: pointer;
+  padding: 5px;
+}
+
+.readMore:hover{
+  background-color: var(--colorText);
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  transition: .3s all ease-in;
 }
 
 

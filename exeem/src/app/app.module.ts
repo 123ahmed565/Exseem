@@ -15,6 +15,7 @@ import { OurprogramComponent } from './component/ourprogram/ourprogram.component
 import { OurservicesComponent } from './component/ourservices/ourservices.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 import { OurnewsComponent } from './component/ournews/ournews.component';
+import { TestimonialsComponent } from './component/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { OurnewsComponent } from './component/ournews/ournews.component';
     OurservicesComponent,
     PagenotfoundComponent,
     OurnewsComponent,
+    TestimonialsComponent,
   ],
   imports: [
     BrowserModule,
