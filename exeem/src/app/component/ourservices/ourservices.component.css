@@ -4,7 +4,7 @@
 
 .mostDepartment{
   background-color: var(--primary);
-  border-radius: 30px;
+  border-radius: 10px;
   margin-top: 30px;
 }
 
@@ -52,7 +52,7 @@
 .swiperDepartment{
   border: 2px solid var(--primary);
   margin-top: 30px;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .imgSale{

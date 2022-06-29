@@ -14,6 +14,10 @@
 
 .TitleApply{
   font-size: 30px;
+  color: white;
+}
+
+.TitleApply2{
   color: var(--colorText);
 }
 
