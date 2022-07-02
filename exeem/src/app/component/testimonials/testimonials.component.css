@@ -9,7 +9,8 @@
   border: 2px solid black;
   border-radius: 50px;
   padding: 5px;
-  margin-top: -51px;
+  margin-top: -52px;
+  height: 100px;
 }
 
 .stitle{
@@ -75,7 +76,7 @@
   left: 40px;
 }
 
-@media (max-width:1000px) {
+@media (max-width:768px) {
   .stitle{
     font-size: 15px;
     overflow: hidden;
@@ -91,11 +92,11 @@
   }
 
   .sca{
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .swipimg{
-    margin-right: -50px;
+    margin-right: -80%;
     height: 65px;
   }
 
@@ -115,11 +116,11 @@
   }
 
   .ti{
-    height: 200px;
+    height: 220px;
   }
 
   .imgs{
-  display: none;
+    display: none;
   }
 }
 

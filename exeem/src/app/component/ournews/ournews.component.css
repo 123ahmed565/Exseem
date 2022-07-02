@@ -13,6 +13,7 @@
   font-size: 18px;
   background-color: #fff;
   border-color: white !important;
+  white-space: nowrap;
 }
 
 .nav-tabs .nav-link.active {
@@ -82,4 +83,23 @@
 }
 
 
-
+@media (max-width:768px) {
+  .ourNews{
+    padding: 10px;
+  }
+  .nav-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row !important;
+  }
+  .nav {
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit;
+  }
+}

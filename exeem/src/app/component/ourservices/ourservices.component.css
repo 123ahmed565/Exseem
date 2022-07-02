@@ -81,3 +81,12 @@
   -webkit-box-orient: vertical;
 }
 
+
+@media (max-width:768px) {
+  .depBtn{
+    display: block !important;
+  }
+  .buttonAlign{
+    margin-right: 0px;
+  }
+}
