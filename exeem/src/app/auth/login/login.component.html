@@ -3,10 +3,10 @@
   <div class="row">
     <!-- data login -->
     <div class="col-12 col-md-6">
-      <img class="imageLogo mx-auto d-block" src="assets/images/logo/logo.png" alt="logo image" loading="lazy">
-      <form class="text-center" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
-        <h1 class="textLogin">تسجيل الدخول</h1>
-
+      <img class="imageLogoMobile mx-auto d-block" src="assets/images/logo/logo.png" alt="logo image" loading="lazy">
+      <form class="alignForm text-center" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+        <h1 class="textLogin m-0 p-0">تسجيل <span class="textLogin2">الدخول</span></h1>
+        <p class="line"></p>
         <div class="form-group">
           <input formControlName="email" type="text" id="email" placeholder="الايميل">
           <br>
@@ -31,6 +31,8 @@
       </form>
     </div>
     <div class="col-12 col-md-6">
+      <!-- image logo -->
+      <img class="imageLogo mx-auto d-block" src="assets/images/logo/logo.png" alt="logo image" loading="lazy">
       <!-- image login -->
       <img class="imgLogin" src="assets/images/login/login.svg" alt="image register" loading="lazy">
     </div>
