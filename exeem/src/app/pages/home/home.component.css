@@ -1,3 +1,49 @@
+/* start header */
+.TitleHeader{
+  color: var(--colorText);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.TitleHeader2{
+  color: var(--primary);
+}
+
+.subTitleHeader{
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.btnHeader{
+  border: none;
+  background-color: var(--colorText);
+  border: 1px solid var(--colorText);
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 10px 50px;
+  box-shadow: none !important;
+  font-weight: 600;
+}
+
+.imgHeader{
+  width: 400px;
+  height: 334px;
+  object-fit: contain;
+}
+
+@media (max-width:768px) {
+  .imgHeader{
+    display: none !important;
+  }
+  .alignHeader{
+    text-align: center;
+  }
+}
+/* end header */
+
+
+
 /* start apply now */
 .applyNow{
   background-color: var(--primary);
@@ -57,6 +103,7 @@
 @media (max-width:768px) {
   .desApply{
     position: inherit;
+    text-align: center;
   }
 
   .imageApply{
@@ -64,75 +111,3 @@
   }
 }
 /* end apply now */
-
-/* start carousal slider */
-.carousel-inner img{
-  width: 100% !important;
-  height: 670px !important;
-}
-
-.carousel-caption .overlay{
-  position: absolute;
-  padding: 30px;
-  height: auto;
-  width: 450px;
-  /* top: 40%; */
-  bottom: 600%;
-  left: 65%;
-  background: rgb(16 15 15 / 65%);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.carousel-caption .resposnive-box{
-  position: relative !important;
-}
-
-.resposnive-box h2{
-color: var(--colorText);
-font-weight: bolder;
-font-size: 25px;
-}
-
-.resposnive-box p{
-  color: #c2bcbc;
-}
-
-.button-float-1{
-  background-color: var(--primary);
-}
-
-.resposnive-box .button-float-1{
-  float: right !important;
-}
-
-.resposnive-box .button-float-2{
-  float: left !important;
-}
-
-.arrows-bacground{
-  background-color: var(--colorText);
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
-  font-size: 20px;
-  color: white !important;
-}
-
-.arrows-bacground:hover{
-  background-color: black;
-  color: var(--colorText) !important;
-  transition: .4s all ease-in-out;
-}
-
-@media (max-width:768px) {
-  .carousel-inner img{
-      max-width: 100% !important;
-      height: 200px !important;
-  }
-}
-/* end carousal slider */
