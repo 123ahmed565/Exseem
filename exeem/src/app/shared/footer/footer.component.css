@@ -1,7 +1,7 @@
 /* start footer */
 .footer-image {
   background-color: var(--primary);
-  padding: 50px;
+  padding: 61px 10px 1px;
   margin-top: 30px;
 }
 
@@ -27,6 +27,30 @@
   color: var(--colorText);
   transition: .1s all ease-in-out;
   padding-right: 6px;
+}
+
+.alignSubFooter{
+  padding-right: 80px;
+  color: white;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.text{
+  cursor: pointer;
+}
+
+.text:hover{
+  color: var(--colorText);
+}
+
+.subText{
+  color: white;
+  font-size: 13px;
+}
+
+.line{
+  border-bottom: 1px solid rgb(94, 91, 91);
 }
 
 @media (max-width:768px) {
