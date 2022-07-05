@@ -1,4 +1,15 @@
 /* start header */
+.header{
+  position: relative;
+}
+
+.alignHeader{
+  position: absolute;
+  width: 500px;
+  top: 90px;
+}
+
+
 .TitleHeader{
   color: var(--colorText);
   font-size: 30px;
@@ -38,6 +49,8 @@
   }
   .alignHeader{
     text-align: center;
+    position: inherit;
+    width: 100%;
   }
 }
 /* end header */
@@ -55,7 +68,6 @@
 .desApply{
   position: absolute;
   top:25%;
-  right: 10%;
 }
 
 .TitleApply{

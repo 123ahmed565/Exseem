@@ -30,7 +30,7 @@
 }
 
 .alignSubFooter{
-  padding-right: 80px;
+  margin: 10px 42px;
   color: white;
   margin-top: 20px;
   font-size: 14px;
@@ -53,6 +53,20 @@
   border-bottom: 1px solid rgb(94, 91, 91);
 }
 
+.image{
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.itemFooter1{
+  margin-bottom: 8px;
+}
+
+.itemFooter1:hover{
+  transform: scale(1.1);
+  transition: .4s all ease-in-out;
+}
 @media (max-width:768px) {
   .footer{
     text-align: center;
@@ -75,6 +89,20 @@
     }
     .links{
       padding-left: 0px;
+    }
+    .alignSubFooter{
+      display: block !important;
+    }
+    .alignSubFooter{
+      padding-right: 0px !important;
+    }
+    .itemFooter1:hover{
+      transform: scale(1);
+    }
+    .image{
+      width: 160px;
+      height: 40px;
+      cursor: pointer;
     }
 }
 /* end footer */
