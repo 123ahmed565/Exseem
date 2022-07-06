@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="373.096" height="576.355" viewBox="0 0 373.096 576.355">
+  <g id="Clint-network" transform="translate(404.096 3517.354) rotate(180)" opacity="0.2">
+    <path id="Path_38238" data-name="Path 38238" d="M-3780.92,6241.256l326.783,175.458L-3682.631,6197.8l-98.115,43.879,53.727,230.4-52.036-223.8-1.69-7.024L-3636.1,6027.1l-46.533,170.692,228.495,218.918-266.684,55.364,41.588-176.33,225.1,120.966-59.01-278.359h-.653l-168.792,59.442L-3787.3,5935.725l140.315,91.379,131.514,109.705" transform="translate(3830.15 -2980.804)" fill="none" stroke="#707070" stroke-width="1" opacity="0.2"/>
+    <g id="Rectangle_373" data-name="Rectangle 373" transform="translate(170.814 3032.643)" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-width="3">
+      <rect width="36.422" height="36.422" rx="18.211" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="39.422" height="39.422" rx="19.711" fill="none"/>
+    </g>
+    <g id="Rectangle_376" data-name="Rectangle 376" transform="translate(129.692 3190.08)" fill="none" stroke="#f47624" stroke-linecap="round" stroke-width="3">
+      <rect width="41.122" height="41.122" rx="20.561" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="44.122" height="44.122" rx="22.061" fill="none"/>
+    </g>
+    <rect id="Rectangle_381" data-name="Rectangle 381" width="17.624" height="17.624" rx="8" transform="translate(141.441 3307.571)" fill="#f47624"/>
+    <path id="Rectangle_382" data-name="Rectangle 382" d="M4.846,0h.441a5.287,5.287,0,0,1,5.287,5.287v0a5.287,5.287,0,0,1-5.287,5.287h0A5.287,5.287,0,0,1,0,5.287V4.846A4.846,4.846,0,0,1,4.846,0Z" transform="translate(310.628 3152.483)" fill="#2c3e50"/>
+    <rect id="Rectangle_383" data-name="Rectangle 383" width="27.023" height="27.023" rx="13.511" transform="translate(31 2941)" fill="#2c3e50"/>
+    <rect id="Rectangle_384" data-name="Rectangle 384" width="27.023" height="27.023" rx="13.511" transform="translate(39.224 3248.826)" fill="#2c3e50"/>
+    <g id="Rectangle_378" data-name="Rectangle 378" transform="translate(348.225 3408.613)" fill="none" stroke="#f47624" stroke-linecap="round" stroke-width="3">
+      <rect width="52.871" height="52.871" rx="26.435" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="55.871" height="55.871" rx="27.935" fill="none"/>
+    </g>
+    <g id="Rectangle_380" data-name="Rectangle 380" transform="translate(87.396 3474.408)" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-width="3">
+      <rect width="39.947" height="39.947" rx="19.973" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="42.947" height="42.947" rx="21.473" fill="none"/>
+    </g>
+    <rect id="character_avatar_illustrations" width="31.722" height="31.722" rx="15.861" transform="translate(173.164 3034.993)" fill="#2c3e50"/>
+    <rect id="character_avatar_illustrations-2" data-name="character_avatar_illustrations" width="36.422" height="36.422" rx="18.211" transform="translate(132.042 3192.43)" fill="#f47624"/>
+    <rect id="character_avatar_illustrations-3" data-name="character_avatar_illustrations" width="44.646" height="44.646" rx="22.323" transform="translate(352.924 3412.138)" fill="#f47624"/>
+    <rect id="character_avatar_illustrations-4" data-name="character_avatar_illustrations" width="34.072" height="34.072" rx="17.036" transform="translate(90.92 3477.932)" fill="#2c3e50"/>
+  </g>
+</svg>

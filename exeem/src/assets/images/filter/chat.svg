@@ -1,0 +1,6 @@
+<svg id="Group_57" data-name="Group 57" xmlns="http://www.w3.org/2000/svg" width="148" height="148" viewBox="0 0 148 148">
+  <circle id="Ellipse_2781" data-name="Ellipse 2781" cx="60" cy="60" r="60" transform="translate(14 14)" fill="#f47624"/>
+  <circle id="Ellipse_2782" data-name="Ellipse 2782" cx="74" cy="74" r="74" fill="#f47624" opacity="0.04"/>
+  <circle id="Ellipse_2783" data-name="Ellipse 2783" cx="66" cy="66" r="66" transform="translate(8 8)" fill="#f47624" opacity="0.04"/>
+  <path id="chat-bubble" d="M7.635,50.9H43.267A7.635,7.635,0,0,0,50.9,43.268V17.817a7.635,7.635,0,0,0-7.635-7.635h-29.5L4.352.739A2.545,2.545,0,0,0,2.545,0a2.138,2.138,0,0,0-.967.2A2.545,2.545,0,0,0,0,2.546V43.268A7.635,7.635,0,0,0,7.635,50.9ZM5.09,8.68l5.828,5.854a2.545,2.545,0,0,0,1.807.738H43.267a2.545,2.545,0,0,1,2.545,2.545V43.268a2.545,2.545,0,0,1-2.545,2.545H7.635A2.545,2.545,0,0,1,5.09,43.268Z" transform="matrix(-0.966, 0.259, -0.259, -0.966, 104.72, 92.449)" fill="#fff"/>
+</svg>

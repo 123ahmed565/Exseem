@@ -16,6 +16,7 @@ import { OurservicesComponent } from './component/ourservices/ourservices.compon
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 import { OurnewsComponent } from './component/ournews/ournews.component';
 import { TestimonialsComponent } from './component/testimonials/testimonials.component';
+import { FilterComponent } from './component/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { TestimonialsComponent } from './component/testimonials/testimonials.com
     PagenotfoundComponent,
     OurnewsComponent,
     TestimonialsComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,
