@@ -1,0 +1,75 @@
+
+
+/* start slider */
+  .carousel-inner img{
+    width: 100% !important;
+    height: 400px !important;
+  }
+
+  .carousel-control-prev-icon {
+    display: inline-block;
+    width: 1.6rem !important;
+    height: 1.6rem !important;
+    padding: 19px !important;
+    background-color: var(--colorText) !important;
+    border-radius: 50% !important;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 63% !important;
+}
+
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+  padding: 19px !important;
+  background-color: var(--colorText) !important;
+  border-radius: 50% !important;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 63% !important;
+}
+
+.carousel-control-prev-icon:hover{
+    background-color: black !important;
+    color: var(--colorText) !important;
+    transition: .4s all ease-in-out;
+}
+
+.carousel-control-next-icon:hover{
+  background-color: black !important;
+  color: var(--colorText) !important;
+  transition: .4s all ease-in-out;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 4px !important;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: var(--colorText) !important;
+}
+/* end slider */
+
+/* start swiper products */
+.swiperProducts{
+  margin-top: 30px;
+}
+
+.title{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.title2{
+  color: var(--colorText);
+}
+
+.alignText{
+  margin-right: 50px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+/* end swiper products */

@@ -17,6 +17,7 @@ import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.com
 import { OurnewsComponent } from './component/ournews/ournews.component';
 import { TestimonialsComponent } from './component/testimonials/testimonials.component';
 import { FilterComponent } from './component/filter/filter.component';
+import { ShopixComponent } from './pages/shopix/shopix.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FilterComponent } from './component/filter/filter.component';
     OurnewsComponent,
     TestimonialsComponent,
     FilterComponent,
+    ShopixComponent,
   ],
   imports: [
     BrowserModule,
