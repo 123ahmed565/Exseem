@@ -123,3 +123,119 @@
   }
 }
 /* end apply now */
+
+
+/* start popular applications */
+.famouspage {
+  margin-top: 30px;
+  padding: 30px;
+  width: 100%;
+  background-color: #969fa833;
+}
+
+.imagefamoustapps{
+  height: 600px;
+}
+
+.orangetext {
+  color: #f47624;
+  font-size: 28px;
+}
+
+.orangetextbig {
+  color: #f47624;
+}
+
+.darktext {
+  color: var(--primary);
+}
+
+.shortdescription {
+  font-size: 22px;
+  color: #969fa8;
+}
+
+.manyimgtext{
+  display: flex;
+  justify-content: center;
+}
+
+.imgtext1 {
+margin-top: 100px;
+margin-left: 60px;
+}
+
+.imgtext2 {
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.imgtext3 {
+  margin-top: 80px;
+}
+
+.img {
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.img img {
+  height: 140px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: x-large;
+  text-align: center;
+}
+
+.descreptiontext {
+  font-size: 18px;
+}
+
+@media (max-width:768px) {
+  .text {
+    font-size: large;
+  }
+  .orangetext{
+    text-align: center;
+  }
+  .shortdescription {
+    font-size: 15px;
+  }
+  .imagefamoustapps{
+    display: none;
+  }
+  .text{
+    font-size: medium;
+  }
+  .img img {
+    height: 60px;
+    margin: 10px ;
+  }
+  .descreption ,.descreptiontext,.orangetextbig {
+    justify-content: center;
+    width: 100%;
+    position: inherit;
+    flex-wrap: wrap;
+    text-overflow: ellipsis;
+    font-size: 15px;
+  }
+  .imgtext2,.imgtext3,.imgtext1 {
+    margin: 10px 15px;
+  }
+  .manyimgtext{
+    display: flex;
+    justify-content: center;
+  }
+  .famouspage {
+    position: inherit;
+    padding: 20px;
+  }
+  .orangetext{
+    text-align: center;
+    padding: 0;
+  }
+}
+
+/* end popular applications */
