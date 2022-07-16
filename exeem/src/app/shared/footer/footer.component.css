@@ -20,7 +20,6 @@
   font-size: 14px;
   font-weight: 400;
   color: white;
-  margin-bottom: 8px;
 }
 
 .itemFooter:hover{
@@ -67,6 +66,19 @@
   transform: scale(1.1);
   transition: .4s all ease-in-out;
 }
+
+.circleIcon{
+  background-color: #4b5b6a;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.textSocial{
+  font-weight: 500;
+}
+
 @media (max-width:768px) {
   .footer{
     text-align: center;

@@ -81,6 +81,7 @@
 
 .subTitleApply{
   color: #949da6;
+  width: 600px;
 }
 
 .desApply{
@@ -121,6 +122,9 @@
   .imageApply{
     margin-top: 20px;
   }
+  .subTitleApply{
+    width: 100%;
+  }
 }
 /* end apply now */
 
@@ -128,7 +132,7 @@
 /* start popular applications */
 .famouspage {
   margin-top: 30px;
-  padding: 30px;
+  padding: 50px;
   width: 100%;
   background-color: #969fa833;
 }
@@ -139,6 +143,7 @@
 
 .orangetext {
   color: #f47624;
+  font-weight: 600;
   font-size: 28px;
 }
 

@@ -71,13 +71,13 @@
 
 .readMore{
   cursor: pointer;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .readMore:hover{
   background-color: var(--colorText);
   border-radius: 10px;
-  padding: 5px;
+  padding: 5px 10px;
   color: white;
   transition: .3s all ease-in;
 }
