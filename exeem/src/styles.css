@@ -171,7 +171,7 @@ input[type=submit]:hover {
   position: fixed;
   bottom: 40px;
   left: 40px;
-  border-radius: 10%;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   font-size: 20px;
