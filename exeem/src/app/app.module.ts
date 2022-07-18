@@ -18,6 +18,7 @@ import { OurnewsComponent } from './component/ournews/ournews.component';
 import { TestimonialsComponent } from './component/testimonials/testimonials.component';
 import { FilterComponent } from './component/filter/filter.component';
 import { ShopixComponent } from './pages/shopix/shopix.component';
+import { ShopixservicesComponent } from './pages/shopixservices/shopixservices.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ShopixComponent } from './pages/shopix/shopix.component';
     TestimonialsComponent,
     FilterComponent,
     ShopixComponent,
+    ShopixservicesComponent,
   ],
   imports: [
     BrowserModule,
