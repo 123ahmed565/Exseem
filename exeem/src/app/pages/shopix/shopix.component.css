@@ -185,8 +185,17 @@
   display: none;
 }
 
+.list.grid-view-filter .data{
+  margin-right: 5px;
+}
+
+.list.list-view-filter .data{
+  margin-right: 15px;
+}
+
 .desList{
   color: #666666;
+  width: 530px;
 }
 
 .image{
@@ -199,7 +208,7 @@
 
 .textProduct{
   font-size: 19px;
-  margin-top: 19px;
+  margin-top: 12px;
 }
 
 .subTextProduct{
@@ -234,5 +243,12 @@
     width: 100% ;
   }
   /* end for mobile version important */
+  .list.list-view-filter .data{
+    margin-right: 5px;
+  }
+
+  .desList{
+    width: 100%;
+  }
 }
 /* end categories */
