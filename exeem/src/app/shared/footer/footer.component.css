@@ -79,6 +79,12 @@
   font-weight: 500;
 }
 
+.descFooter{
+  font-size:14px;
+  font-weight: 400;
+  width:300px;
+}
+
 @media (max-width:768px) {
   .footer{
     text-align: center;
@@ -115,6 +121,9 @@
       width: 160px;
       height: 50px;
       cursor: pointer;
+    }
+    .descFooter{
+      width: 100%;
     }
 }
 /* end footer */
