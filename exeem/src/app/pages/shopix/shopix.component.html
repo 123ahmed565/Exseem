@@ -1,32 +1,34 @@
 <app-header></app-header>
 
 <!-- start slider -->
-<div class="slider">
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/images/carousal/slider.png" class="d-block w-100" alt="image slider" loading="lazy">
+<div class="container">
+  <div class="slider">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
       </div>
-      <div class="carousel-item">
-        <img src="assets/images/carousal/slider2.png" class="d-block w-100" alt="image slider" loading="lazy">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/carousal/slider.png" class="d-block w-100" alt="image slider" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/carousal/slider2.png" class="d-block w-100" alt="image slider" loading="lazy">
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 </div>
 <!-- end slider -->
@@ -48,15 +50,15 @@
       [breakpoints]="{
         '0': {
           slidesPerView: 2.5,
-          spaceBetween: 30
+          spaceBetween: 20
         },
         '600': {
           slidesPerView: 4,
-          spaceBetween: 40
+          spaceBetween: 20
         },
         '1000': {
           slidesPerView: 6,
-          spaceBetween: 50
+          spaceBetween: 20
         }
       }"
       [autoplay]="{
@@ -208,7 +210,7 @@
               </a>
             </div>
           </li>
-          <li class="box-for-categories shadow-sm mb-3" style="position: relative;">w
+          <li class="box-for-categories shadow-sm mb-3" style="position: relative;">
             <a routerLink="">
               <img src="assets/images/shopix/azaby.png" alt="favourite" loading="lazy" class="image">
             </a>
