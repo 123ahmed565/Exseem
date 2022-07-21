@@ -23,6 +23,7 @@ import { BottombarComponent } from './component/bottombar/bottombar.component';
 import { FiltercategoryComponent } from './component/filtercategory/filtercategory.component';
 import { ShopixproductsComponent } from './pages/shopixproducts/shopixproducts.component';
 import { FilterproductsComponent } from './component/filterproducts/filterproducts.component';
+import { ShopixproductsdetailsComponent } from './pages/shopixproductsdetails/shopixproductsdetails.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { FilterproductsComponent } from './component/filterproducts/filterproduc
     FiltercategoryComponent,
     ShopixproductsComponent,
     FilterproductsComponent,
+    ShopixproductsdetailsComponent,
   ],
   imports: [
     BrowserModule,
