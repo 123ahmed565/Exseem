@@ -47,7 +47,6 @@ z-index: -1;
 }
 .searchinput:focus{
   border: 0;
-
 }
 .searchbtn{
   border-radius: 8px;

@@ -1,0 +1,214 @@
+<!-- start filter -->
+<div class="mkradius shadow-md">
+  <div class="item-collapse">
+    <div class="item-header-collapse">
+      <p class="title fw-bold text-black">الفئة</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down icon"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+      </svg>
+    </div>
+    <div class="content-collapse">
+      <div class="infocategkinds">
+        <div class="services">
+          <div class="serviceheading" (click)="plusminusclicked(1)"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" id="plus1" class="bi bi-plus plus" viewBox="0 0 16 16">
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-dash dash" id="dash1" viewBox="0 0 16 16">
+              <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+            </svg>
+            <p>انسيال</p>
+          </div>
+          <div class="servicesbody" id="body1">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="check1">
+              <label class="form-check-label" for="check1">
+                دهب
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="check2">
+              <label class="form-check-label" for="check2">
+                فضة
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="serviceheading" (click)="plusminusclicked(2)"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" id="plus2" class="bi bi-plus plus" viewBox="0 0 16 16">
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-dash dash" id="dash2" viewBox="0 0 16 16">
+              <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+            </svg>
+            <p>الألماس</p>
+          </div>
+          <div class="servicesbody" id="body2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="check3">
+              <label class="form-check-label" for="check3">
+                حلق
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="check4">
+              <label class="form-check-label" for="check4">
+                توينز
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="item-collapse">
+    <div class="item-header-collapse">
+      <p class="title fw-bold text-black">الموقع</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up icon"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+      </svg>
+    </div>
+    <div class="content-collapse">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check5">
+        <label class="form-check-label" for="check5">
+          مصر
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="item-collapse">
+    <div class="item-header-collapse">
+      <p class="title fw-bold text-black">السعر</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down icon"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+      </svg>
+    </div>
+    <div class="content-collapse">
+      <div class="price">
+        <input type="number" name="max" class="textInput" min="1000" placeholder="1">
+        <p class="pricedesc">الـــى</p>
+        <input type="number" name="min" class="textInput" max="25000" placeholder="25000">
+      </div>
+    </div>
+  </div>
+  <div class="item-collapse">
+    <div class="item-header-collapse">
+      <p class="title fw-bold text-black">التقييم</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down icon"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+      </svg>
+    </div>
+    <div class="content-collapse">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check6">
+        <label class="form-check-label" for="check6">
+          جيد
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="item-collapse">
+    <div class="item-header-collapse">
+      <p class="title fw-bold text-black"> وصل حديثاً</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down icon"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+      </svg>
+    </div>
+    <div class="content-collapse">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check7">
+        <label class="form-check-label" for="check7">
+          Iphone
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check8">
+        <label class="form-check-label" for="check8">
+          Mac
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check9">
+        <label class="form-check-label" for="check9">
+          Iwatch
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="item-collapse">
+    <div class="item-header-collapse">
+      <p class="title fw-bold text-black">اللون</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down icon"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+      </svg>
+    </div>
+    <div class="content-collapse">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check10">
+        <label class="form-check-label" for="check10">
+          احمر
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check11">
+        <label class="form-check-label" for="check11">
+          اسود
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check12">
+        <label class="form-check-label" for="check12">
+          ازرق
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="item-collapse">
+    <div class="item-header-collapse">
+      <p class="title fw-bold text-black">الماركة</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down icon"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+      </svg>
+    </div>
+    <div class="content-collapse">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check13">
+        <label class="form-check-label" for="check13">
+          اديبوس
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check14">
+        <label class="form-check-label" for="check14">
+          نيكي
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check15">
+        <label class="form-check-label" for="check15">
+          Iwatch
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end filter -->

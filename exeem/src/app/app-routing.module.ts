@@ -7,6 +7,7 @@ import { FilterComponent } from './component/filter/filter.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ShopixComponent } from './pages/shopix/shopix.component';
+import { ShopixproductsComponent } from './pages/shopixproducts/shopixproducts.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path:'shopix',
     component:ShopixComponent,
+  },
+    {
+    path:'shopixproducts',
+    component:ShopixproductsComponent,
   },
   {
     path:'notfound',

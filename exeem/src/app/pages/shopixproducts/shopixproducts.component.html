@@ -1,0 +1,162 @@
+<app-header></app-header>
+
+<div class="sliderProfile">
+  <div class="container">
+    <div class="row">
+
+      <!-- filter search -->
+      <div class="d-flex align-items-center text-center mt-5">
+        <input type="text" placeholder="البحث ف لازوردى"  class="searchinput">
+        <button class="searchbtn mt-2">بحـــث</button>
+      </div>
+
+      <!-- profile image -->
+      <div class="col-12 col-md-3 d-none d-sm-block">
+        <div class="image">
+          <img src="assets/images/shopixproducts/profile.png" alt="profile" loading="lazy">
+        </div>
+      </div>
+
+      <!-- banner slider -->
+      <div class="col-12 col-md-9">
+        <div class="slider">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button> -->
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/shopixproducts/Banner.jpg" class="d-block w-100" alt="slider banner" loading="lazy">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- start name of product -->
+<div class="container mt-3">
+  <h1 class="titleProduct">لازوردى</h1>
+</div>
+<!-- end name of product -->
+
+<!-- start shopix products -->
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-3 d-none d-sm-block mt-3">
+      <app-filterproducts></app-filterproducts>
+    </div>
+    <div class="col-12 col-md-9">
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <p class="pagination d-none d-sm-block">عرض 1-6 من 1000</p>
+        <p class="d-flex align-items-center textOrg">ترتيب حسب
+          <span>
+            <div class="dropdown">
+              <button class="button-filter dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                الأعلى سعرا
+              </button>
+              <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1">
+                <li class="p-0"><a class="dropdown-item" routerLink="">Most Popular</a></li>
+                <li class="p-0"><a class="dropdown-item" routerLink="">Price Low To High</a></li>
+                <li class="p-0"><a class="dropdown-item" routerLink="">Price High To Low</a></li>
+              </ul>
+            </div>
+          </span>
+        </p>
+        <div class="d-none d-sm-block">
+          <div class="filter-buttons d-flex align-items-center">
+            <p class="textGrid mt-2">طريقة العرض</p>
+            <div class="gridListBtn" id="grid">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                class="bi bi-grid gridImage active-color-filter" viewBox="0 0 16 16">
+                <path
+                  d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+              </svg>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" id="list"
+                class="bi bi-list listImage gridListBtn" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="list grid-view-filter ul-filter">
+
+        <li class="box-for-categories shadow-sm mb-3">
+          <a routerLink="/shopixproducts">
+            <img src="assets/images/shopixproducts/product1.png" alt="product" loading="lazy" class="image">
+          </a>
+          <div class="data p-2 w-100">
+            <a routerLink="">
+              <div class="text-center">
+                <div class="desc">
+                  <h1 class="textProduct fw-bolder">خاتم دوامات الماس</h1>
+                  <!-- <p class="subTextProduct m-0 p-0"></p> -->
+                </div>
+                <div class="rate mt-3">
+                  <div class="d-flex justify-content-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h1 class="number mt-2">8.595 جنيه</h1>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+
+        <li class="box-for-categories shadow-sm mb-3">
+          <a routerLink="">
+            <img src="assets/images/shopixproducts/product2.png" alt="product" loading="lazy" class="image">
+          </a>
+          <div class="data p-2 w-100">
+            <a routerLink="">
+              <div class="text-center">
+                <div class="desc">
+                  <h1 class="textProduct fw-bolder">سلسلة زهرة الماس من الذهب الأبيض عيار 18 قيراط والالماس</h1>
+                  <!-- <p class="subTextProduct m-0 p-0"></p> -->
+                </div>
+                <div class="rate mt-3">
+                  <div class="d-flex justify-content-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h1 class="number mt-2">13.566 جنيه</h1>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- end shopix products -->
+
+<app-footer></app-footer>
