@@ -33,3 +33,39 @@ body {
   color: white;
 }
 /* end filter search */
+
+
+/* start product swiper */
+.mainImageProduct{
+  width: 350px;
+  height: 300px;
+}
+
+.imgProduct{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.buttonSize{
+  background-color: white;
+  border: 1px solid var(--primary);
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.buttonSize:hover{
+  background-color: var(--colorText);
+  transition: .3 all ease;
+}
+
+.btn-check:checked+.btn-secondary{
+  background-color: var(--primary) !important;
+  border-color: none !important;
+  outline: none !important;
+}
+/* end product swiper */

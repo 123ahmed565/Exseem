@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ServService } from 'src/app/services/serv.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private api:ServService) { }
 
     loginForm = new FormGroup({
     email: new FormControl('',[Validators.email,Validators.required]),
@@ -23,9 +24,16 @@ onSubmitLogin() {
     alert('من فضلك ادخل البريد الإلكتروني و كلمة السر')
   }
   else{
-    this.router.navigate(['/home']);
+    this.api.login(this.loginForm.value).subscribe((res:any)=>{
+      alert("تم تسجيل دخولك بنجاح");
+      this.router.navigate(['/home']);
+    },
+    (err:any)=>{
+      console.log(err);
+      alert("الايميل او الباسورد خطأ");
+    }
+    );
   }
-    console.log(this.loginForm.value);
 }
 
   ngOnInit(): void {

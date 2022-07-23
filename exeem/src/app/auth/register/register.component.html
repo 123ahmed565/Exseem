@@ -14,9 +14,9 @@
         </div>
 
         <div class="form-group">
-          <input formControlName="phone" type="text" id="phone" placeholder="رقم الهاتف" required>
+          <input formControlName="phoneNumber" type="text" id="phoneNumber" placeholder="رقم الهاتف" required>
           <br>
-          <small *ngIf="registerForm.get('phone')?.invalid &&registerForm.get('phone')?.touched" class="text-danger">برجاء ادخال رقم الهاتف  </small>
+          <small *ngIf="registerForm.get('phoneNumber')?.invalid &&registerForm.get('phoneNumber')?.touched" class="text-danger">برجاء ادخال رقم الهاتف  </small>
         </div>
 
         <div class="form-group">
@@ -26,9 +26,9 @@
         </div>
 
         <div class="form-group">
-          <input formControlName="authpassword" type="password" name="" id="" placeholder="اعادة كتابة كلمة السر" required>
+          <input formControlName="confirmPassword" type="password" name="" id="" placeholder="اعادة كتابة كلمة السر" required>
           <br>
-          <small *ngIf="registerForm.get('authpassword')?.invalid &&registerForm.get('authpassword')?.touched" class="text-danger">برجاء اعادة كتابة كلمة السر</small>
+          <small *ngIf="registerForm.get('confirmPassword')?.invalid &&registerForm.get('confirmPassword')?.touched" class="text-danger">برجاء اعادة كتابة كلمة السر</small>
         </div>
 
         <br>

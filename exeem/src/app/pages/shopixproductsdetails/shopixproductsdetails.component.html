@@ -15,10 +15,71 @@
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-4">
-
+      <div class="swiperProduct">
+        <!-- main image -->
+        <div class="block">
+          <img class="mainImageProduct shadow-sm" src="assets/images/shopixdetails/pr2.png" alt="product image" laoding="lazy">
+        </div>
+        <!-- swiper product -->
+        <div class="products mt-3">
+          <swiper class=""
+          [slidesPerView]="3"
+          [spaceBetween]="50"
+          [loop]="true"
+          [grabCursor]="true"
+          [breakpoints]="{
+            '0': {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            '600': {
+              slidesPerView: 1.5,
+              spaceBetween: 40
+            },
+            '1000': {
+              slidesPerView: 3,
+              spaceBetween: 10
+            }
+          }"
+          >
+          <ng-template swiperSlide>
+            <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr2.png" alt="news image" loading="lazy">
+          </ng-template>
+          <ng-template swiperSlide>
+            <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr3.png" alt="news image" loading="lazy">
+          </ng-template>
+          <ng-template swiperSlide>
+            <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr4.png" alt="news image" loading="lazy">
+          </ng-template>
+          </swiper>
+        </div>
+      </div>
     </div>
     <div class="col-12 col-md-8">
+      <div class="productDetails">
+        <!-- product name -->
+        <h1>خاتم الألماس الملفت من الذهب الأبيض عيار 18 قيراط</h1>
+        <!-- code -->
+        <p>: رمز المنتج<span>RG10-1030</span></p>
+        <!-- choose size -->
+        <form action="" class="border-bottom">
+          <div class="size-product">
+              <p class="mb-1 text-black fw-bold">أختار المقاس</p>
+              <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+              <label class="btn-secondary m-2 buttonSize" for="option1">12</label>
 
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+              <label class="btn-secondary m-2 buttonSize" for="option2">13</label>
+              <!-- <br> -->
+              <input type="radio" class="btn-check " name="options" id="option3" autocomplete="off">
+              <label class="btn-secondary m-2 buttonSize" for="option3">14</label>
+
+              <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+              <label class="btn-secondary m-2 buttonSize" for="option4">15</label>
+          </div>
+      </form>
+
+      </div>
     </div>
   </div>
 </div>
