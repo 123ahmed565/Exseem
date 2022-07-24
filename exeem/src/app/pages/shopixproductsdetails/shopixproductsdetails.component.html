@@ -1,69 +1,68 @@
-
 <app-header></app-header>
 
 <!--start filter search -->
 <div class="search">
   <div class="container">
-    <div class="d-flex align-items-center text-center mt-5">
-      <input type="text" placeholder="البحث ف لازوردى"  class="searchinput">
+    <div class="d-flex align-items-center text-center mt-3">
+      <input type="text" placeholder="البحث ف لازوردى" class="searchinput">
       <button class="searchbtn mt-2">بحـــث</button>
     </div>
   </div>
 </div>
 <!--end filter search -->
 
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-md-4">
-      <div class="swiperProduct">
-        <!-- main image -->
-        <div class="block">
-          <img class="mainImageProduct shadow-sm" src="assets/images/shopixdetails/pr2.png" alt="product image" laoding="lazy">
-        </div>
-        <!-- swiper product -->
-        <div class="products mt-3">
-          <swiper class=""
-          [slidesPerView]="3"
-          [spaceBetween]="50"
-          [loop]="true"
-          [grabCursor]="true"
-          [breakpoints]="{
-            '0': {
-              slidesPerView: 1,
-              spaceBetween: 30
-            },
-            '600': {
-              slidesPerView: 1.5,
-              spaceBetween: 40
-            },
-            '1000': {
-              slidesPerView: 3,
-              spaceBetween: 10
-            }
-          }"
-          >
-          <ng-template swiperSlide>
-            <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr2.png" alt="news image" loading="lazy">
-          </ng-template>
-          <ng-template swiperSlide>
-            <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr3.png" alt="news image" loading="lazy">
-          </ng-template>
-          <ng-template swiperSlide>
-            <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr4.png" alt="news image" loading="lazy">
-          </ng-template>
-          </swiper>
+<!-- start product details -->
+<div class="Details">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="swiperProduct">
+          <!-- main image -->
+          <div class="block">
+            <img class="mainImageProduct shadow-sm" src="assets/images/shopixdetails/pr2.png" alt="product image"
+              laoding="lazy">
+          </div>
+          <!-- swiper product -->
+          <div class="products mt-3">
+            <swiper class="" [slidesPerView]="3" [spaceBetween]="50" [loop]="true" [grabCursor]="true" [breakpoints]="{
+              '0': {
+                slidesPerView: 3.5,
+                spaceBetween: 15
+              },
+              '600': {
+                slidesPerView: 1.5,
+                spaceBetween: 40
+              },
+              '1000': {
+                slidesPerView: 3,
+                spaceBetween: 10
+              }
+            }">
+              <ng-template swiperSlide>
+                <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr2.png" alt="news image"
+                  loading="lazy">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr3.png" alt="news image"
+                  loading="lazy">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr4.png" alt="news image"
+                  loading="lazy">
+              </ng-template>
+            </swiper>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-12 col-md-8">
-      <div class="productDetails">
-        <!-- product name -->
-        <h1>خاتم الألماس الملفت من الذهب الأبيض عيار 18 قيراط</h1>
-        <!-- code -->
-        <p>: رمز المنتج<span>RG10-1030</span></p>
-        <!-- choose size -->
-        <form action="" class="border-bottom">
-          <div class="size-product">
+      <div class="col-12 col-md-8">
+        <div class="productDetails shadow-sm">
+          <!-- product name -->
+          <h1 class="title mt-4">خاتم الألماس الملفت من الذهب الأبيض عيار 18 قيراط</h1>
+          <!-- code -->
+          <p>رمز المنتج<span> : RG10-1030</span></p>
+          <!-- choose size -->
+          <form>
+            <div class="size-product">
               <p class="mb-1 text-black fw-bold">أختار المقاس</p>
               <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
               <label class="btn-secondary m-2 buttonSize" for="option1">12</label>
@@ -76,15 +75,241 @@
 
               <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
               <label class="btn-secondary m-2 buttonSize" for="option4">15</label>
+            </div>
+          </form>
+          <p class="price mt-3">8.595 جنية</p>
+        </div>
+        <div class="quantityBought shadow-sm mt-3">
+          <div class="displayQuan d-flex justify-content-between align-items-center mt-3">
+            <div class="all d-flex align-items-center">
+              <p class="textQuantity fw-bold">الكمية</p>
+              <form class="quantity">
+                <div class="input-group mb-1">
+                  <button class="m-2 mt-1 button-add" type="button" id="button-addon2">+</button>
+                  <input type="number" class="form-control quantity  text-center" min="1" step="1" max="10" value="1"
+                    aria-label="count number" aria-describedby="button-addon2">
+                  <button class="m-2 mt-1 button-minuse" type="button" id="button-addon2">-</button>
+                </div>
+              </form>
+            </div>
+            <button class="btnBought">
+              أشترى الأن
+            </button>
           </div>
-      </form>
-
+        </div>
       </div>
     </div>
   </div>
 </div>
+<!-- end product details -->
 
+<!-- start comment & opinion-->
+<div class="container">
+  <div class="row text-center bgw mt-4">
+    <ul class="nav nav-tabs information mt-1" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+          aria-controls="home" aria-selected="true">نظره عامه</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+          role="tab" aria-controls="profile" aria-selected="false">التقييم و الاراء</button>
+      </li>
+    </ul>
 
+    <div class="tab-content mt-4" id="myTabContent">
+      <!-- first tab -->
+      <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+        dfsdfs
+      </div>
+      <!-- second tab -->
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="ourinfo">
+          <div class="container">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                  <div class="bgw">
+                    <div class="ratee">
+                      <!-- all comment -->
+                      <div class="col-md-4">
+                        <h2 class="text-center sm:mt-1 md:mt-4">4</h2>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <p class="textinfo text-center mt-2">اجمالي التقيمات 1321</p>
+                      </div>
+                      <!-- progress bar -->
+                      <div class="col-md-4">
+                        <div class="row">
+                          <div class="contentProg">
+                            <p class="ftcontent">(231)</p>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="contentProg">
+                            <p class="ftcontent">(231)</p>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="contentProg">
+                            <p class="ftcontent">(231)</p>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="contentProg">
+                            <p class="ftcontent">(231)</p>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="contentProg">
+                            <p class="ftcontent">(231)</p>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- stars -->
+                      <div class="col-md-4 d-none d-sm-block">
+                        <div class="stars">
+                          <p class="ftcontent">5</p>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stars">
+                          <p class="ftcontent">4</p>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stars">
+                          <p class="ftcontent">3</p>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stars">
+                          <p class="ftcontent">2</p>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stars">
+                          <p class="ftcontent">1</p>
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col " style="text-align:start; margin-right:30px">
+                        <h2 class="mkpaddinginres">التقييمات</h2>
+                        <p>تتم عملية التقييم بناءا علي حسابات حقيقة لضمان الجودة الكاملة والاستفادة</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Start First comment -->
+                <div class="row">
+                  <div class="col-2 col-md-2" style="display: flex;justify-content:flex-end">
+                    <img src="assets\images\shopixproducts\1.png" class="imgClient" alt="imagefor client" load="lazy">
+                  </div>
+                  <div class="col-10 col-md-10" style="display: flex;flex-direction:column;  justify-content: flex-start; position: relative;
+                  ">
+                    <h2 class="name textperson">محمد عبد السلام</h2>
+                    <h3 class="date textperson">٥ يوليو ٢٠٢٢ ١٢:٤٨ م</h3>
+                    <div class="d-flex stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="textperson desc">بجد غيرتى فكرتى عند دكتوره الاسنان بسبب تجربتى السيئه قبل حضرتك دكتور في
+                      قمه الرقي والدقه والضمير بجد شكرررا جدا لحضرتك</p>
+                  </div>
+                </div>
+                <!-- End First comment -->
+
+                <!-- Start Second comment -->
+                <div class="row">
+                  <div class="col-2 col-md-2" style="display: flex;justify-content:flex-end">
+                    <img src="assets\images\shopixproducts\2.png" class="imgClient" alt="imagefor client" load="lazy">
+                  </div>
+                  <div class="col-10 col-md-10" style="display: flex;flex-direction:column;  justify-content: flex-start; position: relative;
+                  ">
+                    <h2 class="name textperson">محمد عبد السلام</h2>
+                    <h3 class="date textperson">٥ يوليو ٢٠٢٢ ١٢:٤٨ م</h3>
+                    <div class="d-flex stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="textperson desc">بجد غيرتى فكرتى عند دكتوره الاسنان بسبب تجربتى السيئه قبل حضرتك دكتور في
+                      قمه الرقي والدقه والضمير بجد شكرررا جدا لحضرتك</p>
+                  </div>
+                </div>
+                <!-- End Second comment -->
+
+                <!-- Start Third comment -->
+                <div class="row">
+                  <div class="col-2 col-md-2" style="display: flex;justify-content:flex-end">
+                    <img src="assets\images\shopixproducts\3.png" class="imgClient" alt="imagefor client" load="lazy">
+                  </div>
+                  <div class="col-10 col-md-10" style="display: flex;flex-direction:column;  justify-content: flex-start; position: relative;
+                  ">
+                    <h2 class="name textperson">محمد عبد السلام</h2>
+                    <h3 class="date textperson">٥ يوليو ٢٠٢٢ ١٢:٤٨ م</h3>
+                    <div class="d-flex stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="textperson desc">بجد غيرتى فكرتى عند دكتوره الاسنان بسبب تجربتى السيئه قبل حضرتك دكتور في
+                      قمه الرقي والدقه والضمير بجد شكرررا جدا لحضرتك</p>
+                  </div>
+                </div>
+                <!-- End Third comment -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end comment & opinion-->
 
 
 

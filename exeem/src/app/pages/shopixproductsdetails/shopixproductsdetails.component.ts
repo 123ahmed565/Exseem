@@ -40,6 +40,16 @@ export class ShopixproductsdetailsComponent implements OnInit {
     //     $(".block .mainImageProduct").attr("src", imageSrc);
     //   }
     // });
+
+    // increase and decrease number in canvas menu for product
+    $(".input-group").on("click", ".button-add", function () {
+      var quantity:any = $(".quantity").val();
+      $(".quantity").val(parseInt(quantity) + 1);
+    });
+    $(".input-group").on("click", ".button-minuse", function () {
+      var quantity:any = $(".quantity").val();
+      $(".quantity").val(parseInt(quantity) - 1);
+    });
   }
 
 }
