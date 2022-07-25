@@ -275,22 +275,6 @@ color: #D8DCDF;
   margin-right: -6%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .nav-tabs {
   border-bottom: 0 !important;
 }
@@ -359,6 +343,23 @@ color: #D8DCDF;
   align-items: baseline;
 }
 
+.title{
+  font-size: 17px;
+}
+
+.subTitle{
+  color: #666666;
+  font-size: 15px;
+}
+
+.list{
+  padding-right: 10px;
+}
+
+.table {
+  width: 60% !important;
+  font-size: 14px !important;
+}
 
 @media (max-width:768px) {
   #myTab{

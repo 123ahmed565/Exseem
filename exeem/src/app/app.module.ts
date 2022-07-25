@@ -24,6 +24,7 @@ import { FiltercategoryComponent } from './component/filtercategory/filtercatego
 import { ShopixproductsComponent } from './pages/shopixproducts/shopixproducts.component';
 import { FilterproductsComponent } from './component/filterproducts/filterproducts.component';
 import { ShopixproductsdetailsComponent } from './pages/shopixproductsdetails/shopixproductsdetails.component';
+import { SuggestproductComponent } from './component/suggestproduct/suggestproduct.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ShopixproductsdetailsComponent } from './pages/shopixproductsdetails/sh
     ShopixproductsComponent,
     FilterproductsComponent,
     ShopixproductsdetailsComponent,
+    SuggestproductComponent,
   ],
   imports: [
     BrowserModule,
