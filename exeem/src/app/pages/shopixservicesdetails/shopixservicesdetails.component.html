@@ -19,38 +19,8 @@
         <div class="swiperProduct">
           <!-- main image -->
           <div class="block">
-            <img class="mainImageProduct shadow-sm" src="assets/images/shopixdetails/pr2.png" alt="product image"
+            <img class="mainImageProduct shadow-sm" src="assets/images/shopixservices/Banneer.png" alt="product image"
               laoding="lazy">
-          </div>
-          <!-- swiper product -->
-          <div class="products mt-3">
-            <swiper class="" [slidesPerView]="3" [spaceBetween]="50" [loop]="true" [grabCursor]="true" [breakpoints]="{
-              '0': {
-                slidesPerView: 3.5,
-                spaceBetween: 15
-              },
-              '600': {
-                slidesPerView: 1.5,
-                spaceBetween: 40
-              },
-              '1000': {
-                slidesPerView: 3,
-                spaceBetween: 10
-              }
-            }">
-              <ng-template swiperSlide>
-                <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr2.png" alt="news image"
-                  loading="lazy">
-              </ng-template>
-              <ng-template swiperSlide>
-                <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr3.png" alt="news image"
-                  loading="lazy">
-              </ng-template>
-              <ng-template swiperSlide>
-                <img class="imgProduct shadow-sm" src="assets/images/shopixdetails/pr4.png" alt="news image"
-                  loading="lazy">
-              </ng-template>
-            </swiper>
           </div>
         </div>
       </div>
@@ -81,17 +51,6 @@
         </div>
         <div class="quantityBought shadow-sm mt-3">
           <div class="displayQuan d-flex justify-content-between align-items-center mt-3">
-            <div class="all d-flex align-items-center">
-              <p class="textQuantity fw-bold">الكمية</p>
-              <form class="quantity">
-                <div class="input-group mb-1">
-                  <button class="m-2 mt-1 button-add" type="button" id="button-addon2">+</button>
-                  <input type="number" class="form-control quantity  text-center" min="1" step="1" max="10" value="1"
-                    aria-label="count number" aria-describedby="button-addon2">
-                  <button class="m-2 mt-1 button-minuse" type="button" id="button-addon2">-</button>
-                </div>
-              </form>
-            </div>
             <button class="btnBought">
               أشترى الأن
             </button>
@@ -102,6 +61,7 @@
   </div>
 </div>
 <!-- end product details -->
+
 
 <!-- start comment & opinion-->
 <div class="container">
@@ -336,6 +296,6 @@
 </div>
 <!-- end comment & opinion-->
 
-<app-suggestproduct></app-suggestproduct>
 
 <app-footer></app-footer>
+

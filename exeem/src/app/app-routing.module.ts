@@ -9,6 +9,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ShopixComponent } from './pages/shopix/shopix.component';
 import { ShopixproductsComponent } from './pages/shopixproducts/shopixproducts.component';
 import { ShopixproductsdetailsComponent } from './pages/shopixproductsdetails/shopixproductsdetails.component';
+import { ShopixservicesComponent } from './pages/shopixservices/shopixservices.component';
+import { ShopixservicesdetailsComponent } from './pages/shopixservicesdetails/shopixservicesdetails.component';
 
 const routes: Routes = [
   {
@@ -47,6 +49,14 @@ const routes: Routes = [
   {
     path:'shopixproductsdetails',
     component:ShopixproductsdetailsComponent,
+  },
+  {
+    path:'shopixservices',
+    component:ShopixservicesComponent,
+  },
+  {
+    path:'shopixservicesdetails',
+    component:ShopixservicesdetailsComponent,
   },
   {
     path:'notfound',
