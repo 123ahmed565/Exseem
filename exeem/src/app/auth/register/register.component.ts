@@ -36,13 +36,19 @@ onSubmitRegister() {
     {
       this.api.register(data).subscribe((res:any)=>
       {
-        alert('تم تسجيلك الحساب');
-        this.router.navigate(['/login']);
+        if(res.statusMessage.includes("البريد الالكتروني موجود بالفعل")){
+          alert(res.statusMessage);
+        }
+        else{
+          alert('تم تسجيلك الحساب');
+          this.router.navigate(['/login']);
+        }
       },
       (err:any)=>{
-        if(err.error.msg.includes("statusMessage")){
-          alert("assd");
+        if(err.error.msg.includes("البريد الالكتروني موجود بالفعل")){
+          alert("برجاء المحاولة مرة اخرى ");
         }
+        console.log(err);
       }
       )
 
