@@ -1,0 +1,26 @@
+.title{
+  font-size: 20px;
+  margin-top: 40px;
+  color: #2C3E50;
+}
+
+
+.details{
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px
+}
+
+
+.titleProduct{
+  font-size: 17px;
+  color: #2C3E50;
+  font-weight: 500;
+}
+
+.price{
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--colorText);
+}

@@ -422,5 +422,8 @@ color: #D8DCDF;
     -ms-flex-wrap: inherit;
     flex-wrap: inherit;
   }
+  .table {
+    width: 100% !important;
+  }
 }
 /* end comment & opinion */
