@@ -4,6 +4,8 @@ import swiper from 'swiper';
 import SwiperCore, {Autoplay} from 'swiper';
 SwiperCore.use([Autoplay]);
 import Swiper, { SwiperOptions } from 'swiper';import { SwiperComponent } from 'swiper/angular';
+import { ServService } from 'src/app/services/serv.service';
+
 
 @Component({
   selector: 'app-shopix',
@@ -25,7 +27,9 @@ export class ShopixComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(private api:ServService) { }
+
+  posts:any;
 
   ngOnInit(): void {
     // grid - list for page categories
@@ -61,6 +65,12 @@ export class ShopixComponent implements OnInit {
         $('.listImage').removeClass('active-color-filter');
       }
     })
+
+
+    // get data from swiper category
+    this.api.getProduct().subscribe((res:any)=>{
+    });
+
   }
 
 }

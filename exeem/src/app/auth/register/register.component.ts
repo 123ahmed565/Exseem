@@ -40,9 +40,9 @@ onSubmitRegister() {
         this.router.navigate(['/login']);
       },
       (err:any)=>{
-        // if(err.error.msg.includes("duplicate")){
+        if(err.error.msg.includes("statusMessage")){
           alert("assd");
-        // }
+        }
       }
       )
 
