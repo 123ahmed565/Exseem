@@ -65,10 +65,10 @@
       delay: 3000,
       disableOnInteraction: false
     }">
-      <ng-template swiperSlide>
+      <ng-template swiperSlide *ngFor="let item of ahmed">
         <div class="content">
-          <img class="imageCategory" src="assets/images/shopix/logistics.png" alt="image products" loading="lazy">
-          <h1 class="titleProducts mt-1">الشحن واللوجيستيات</h1>
+          <img class="imageCategory" [src]="item.imagePath" alt="image products" loading="lazy">
+          <h1 class="titleProducts mt-1">{{item.name}}</h1>
         </div>
       </ng-template>
       <ng-template swiperSlide>

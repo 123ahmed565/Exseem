@@ -10,25 +10,25 @@
         <div class="form-group">
           <input formControlName="email" type="email" id="" placeholder="الايميل" required>
           <br>
-          <small *ngIf="registerForm.get('email')?.invalid &&registerForm.get('email')?.touched" class="text-danger">برجاء ادخال البريد الالكتروني   </small>
+          <small *ngIf="registerForm.get('email')?.invalid &&registerForm.get('email')?.touched" class="text-danger validationText">* برجاء ادخال البريد الالكتروني   </small>
         </div>
 
         <div class="form-group">
-          <input formControlName="phoneNumber" type="text" id="phoneNumber" placeholder="رقم الهاتف" required>
+          <input formControlName="phoneNumber" type="text" id="" placeholder="رقم الهاتف" required>
           <br>
-          <small *ngIf="registerForm.get('phoneNumber')?.invalid &&registerForm.get('phoneNumber')?.touched" class="text-danger">برجاء ادخال رقم الهاتف  </small>
+          <small *ngIf="registerForm.get('phoneNumber')?.invalid &&registerForm.get('phoneNumber')?.touched" class="text-danger validationText">* برجاء ادخال رقم الهاتف  </small>
         </div>
 
         <div class="form-group">
           <input formControlName="password" type="password" name="" id="" placeholder="كلمة السر" required>
           <br>
-          <small *ngIf="registerForm.get('password')?.invalid &&registerForm.get('password')?.touched" class="text-danger">برجاء كتابة كلمة السر</small>
+          <small *ngIf="registerForm.get('password')?.invalid &&registerForm.get('password')?.touched" class="text-danger validationText">* برجاء كتابة كلمة السر</small>
         </div>
 
         <div class="form-group">
           <input formControlName="confirmPassword" type="password" name="" id="" placeholder="اعادة كتابة كلمة السر" required>
           <br>
-          <small *ngIf="registerForm.get('confirmPassword')?.invalid &&registerForm.get('confirmPassword')?.touched" class="text-danger">برجاء اعادة كتابة كلمة السر</small>
+          <small *ngIf="registerForm.get('confirmPassword')?.invalid &&registerForm.get('confirmPassword')?.touched" class="text-danger validationText">* برجاء اعادة كتابة كلمة السر</small>
         </div>
 
         <br>

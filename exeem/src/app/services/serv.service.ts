@@ -1,14 +1,26 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServService {
-BASE_URL:string="http://68.178.161.192";
+  // attach api
+  BASE_URL:string="http://68.178.161.192";
+
+  // for remove button login
+  username:Observable<string>|null=null;
+  private loggedIn = new BehaviorSubject<boolean>(false);
+  get isLoggedIn() {
+    return this.loggedIn.asObservable();
+  }
+  loginn() {
+    this.loggedIn.next(true);
+  }
+
+
   constructor(private http: HttpClient) {}
-
-
   ///////////////////////////////////////////// authentication ////////////////////////////////////////
 
   // register page
@@ -19,6 +31,11 @@ BASE_URL:string="http://68.178.161.192";
   // login page
   login(data:any){
     return this.http.post(`${this.BASE_URL}/api/Accounts/Login`,data);
+  }
+
+  // forget password
+  forget(data:any){
+    return this.http.post(`${this.BASE_URL}/api/Accounts/ForgotPassword`,data);
   }
 
   ///////////////////////////////////////////// authentication ////////////////////////////////////////

@@ -29,7 +29,7 @@ export class ShopixComponent implements OnInit {
 
   constructor(private api:ServService) { }
 
-  posts:any;
+  ahmed:any;
 
   ngOnInit(): void {
     // grid - list for page categories
@@ -69,6 +69,8 @@ export class ShopixComponent implements OnInit {
 
     // get data from swiper category
     this.api.getProduct().subscribe((res:any)=>{
+      this.ahmed=res;
+      // alert(JSON.stringify(this.ahmed));
     });
 
   }

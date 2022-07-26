@@ -48,6 +48,14 @@
   margin-top: 20px;
 }
 
+.validationText{
+  font-size: 12px;
+  font-weight: 800;
+  position: relative;
+  left: 68px;
+  bottom: 7px;
+}
+
 @media (max-width:768px) {
   .imgRegister{
     display: none;

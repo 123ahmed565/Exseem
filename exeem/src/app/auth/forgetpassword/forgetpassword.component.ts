@@ -18,7 +18,6 @@ export class ForgetpasswordComponent implements OnInit {
 
 // forget password validations
 onSubmitForget() {
-
   if(this.forgetPasswordForm.valid){
     alert('سيتم ارسال الرقم السري ع البريد الالكترونى الخاص بك  ان وجد');
     this.router.navigate(['/login']);

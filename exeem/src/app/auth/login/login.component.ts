@@ -21,12 +21,17 @@ export class LoginComponent implements OnInit {
 // login validations
 onSubmitLogin() {
   if(this.loginForm.invalid){
-    alert('من فضلك ادخل البريد الإلكتروني و كلمة السر')
+    alert('من فضلك ادخل البريد الإلكتروني و كلمة السر');
   }
   else{
     this.api.login(this.loginForm.value).subscribe((res:any)=>{
-      alert("تم تسجيل دخولك بنجاح");
-      this.router.navigate(['/home']);
+      if(res.statusMessage.includes("هذا البريد الالكتروني  ليس مشترك")){
+        alert(res.statusMessage);
+      }
+      else{
+        alert("تم تسجيل دخولك بنجاح");
+        this.router.navigate(['/home']);
+      }
     },
     (err:any)=>{
       console.log(err);
