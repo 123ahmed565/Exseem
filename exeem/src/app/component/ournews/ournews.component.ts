@@ -3,6 +3,8 @@ import swiper from 'swiper';
 import SwiperCore, {Autoplay} from 'swiper';
 SwiperCore.use([Autoplay]);
 import Swiper, { SwiperOptions } from 'swiper';import { SwiperComponent } from 'swiper/angular';
+import { ServService } from 'src/app/services/serv.service';
+
 
 @Component({
   selector: 'app-ournews',
@@ -24,9 +26,14 @@ export class OurnewsComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(private api:ServService) { }
 
   ngOnInit(): void {
+    // get data from api ournews category
+    this.api.getProduct().subscribe((res:any)=>{
+      // this.ahmed=res;
+      // alert(JSON.stringify(this.ahmed));
+    });
   }
 
 }
