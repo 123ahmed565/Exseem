@@ -37,19 +37,20 @@
           <!-- avatar profile -->
           <div class="d-flex align-items-center">
             <!-- avatar -->
-            <div class="avatar">
+            <div class="avatar" *ngIf="(isLogin$|async)as loginStatues">
               <p class="letter">أ</p>
+              <button (click)="logout()">remove</button>
             </div>
             <!-- wellcome -->
-            <div class="d-block textWelcome">
+            <div class="d-block textWelcome" *ngIf="(isLogin$|async)as loginStatues">
               <p class="m-0 p-0 wel">مرحبا,</p>
               <p class="name">أحمد سراج</p>
             </div>
           </div>
           <!-- button login -->
-          <button class="btnLogin" onclick="window.location.href='/login'">دخـول</button>
+          <button *ngIf="!(isLogin$|async)as loginStatues" class="btnLogin" onclick="window.location.href='/login'">دخـول</button>
           <!-- button login free -->
-          <button class="btnLoginFree" onclick="window.location.href='/register'">سجل الأن مجانا</button>
+          <button *ngIf="!(isLogin$|async)as loginStatues" class="btnLoginFree" onclick="window.location.href='/register'">سجل الأن مجانا</button>
         </div>
     </div>
   </nav>

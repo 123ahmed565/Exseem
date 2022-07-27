@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+import { Observable } from 'rxjs/internal/Observable';
 import { ServService } from 'src/app/services/serv.service';
 
 @Component({
@@ -10,6 +12,11 @@ import { ServService } from 'src/app/services/serv.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  //check for if login remove button login from header
+  loginStatues=new BehaviorSubject<boolean>(false);
+  isLogin$:Observable<boolean>|null=null;
+
 
   constructor(private router:Router, private api:ServService) { }
 
@@ -28,7 +35,13 @@ onSubmitLogin() {
       if(res.statusMessage.includes("هذا البريد الالكتروني  ليس مشترك")){
         alert(res.statusMessage);
       }
+      else if(res.statusMessage.includes("الرقم السري غير صحيح")){
+        alert(res.statusMessage);
+      }
       else{
+        // check for if login remove button login from header
+        this.api.loginn();
+
         alert("تم تسجيل دخولك بنجاح");
         this.router.navigate(['/home']);
       }
@@ -42,6 +55,8 @@ onSubmitLogin() {
 }
 
   ngOnInit(): void {
+    // check for if login remove button login from header
+    this.isLogin$=this.api.isLoggedIn
   }
 
 

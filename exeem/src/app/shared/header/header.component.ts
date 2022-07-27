@@ -1,4 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild  } from '@angular/core';
+import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+import { Observable } from 'rxjs/internal/Observable';
+import { ServService } from 'src/app/services/serv.service';
 
 
 @Component({
@@ -8,10 +11,19 @@ import { Component, ElementRef, OnInit, ViewChild  } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+    //check for if login remove button login from header
+    loginStatues=new BehaviorSubject<boolean>(false);
+    isLogin$:Observable<boolean>|null=null;
+
+    // function logout
+    logout():void{
+      this.api.logout();
+    }
+
   upBtn: Boolean = false;
   test: Boolean = false;
 
-  constructor() {
+  constructor(private api:ServService) {
     document.addEventListener('scroll', (e) => {
       if (document.documentElement.scrollTop <= 100) {
         this.upBtn = false;
@@ -33,6 +45,8 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+        // check for if login remove button login from header
+        this.isLogin$=this.api.isLoggedIn
   }
 
 }
