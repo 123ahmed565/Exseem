@@ -105,6 +105,33 @@ background-color: var(--primary);
   float: right;
 }
 
+.avatar{
+  background-color: #ffeae5;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 6px;
+}
+
+.letter{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.textWelcome{
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.wel{
+  font-weight: 700;
+}
+
+.name{
+  font-weight: 500;
+}
+
 @media (min-width:768px) {
   .fa-bars{
       display: none;
