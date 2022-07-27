@@ -1,0 +1,121 @@
+.contactus{
+  margin-top: 50px;
+}
+
+.title {
+  color: var(--colorText);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.desc {
+  color: #969FA8;
+  font-size: 16px;
+  width: 428px;
+  font-weight: 500;
+}
+
+.form-control {
+  border: none;
+  background-color: #fafafb;
+}
+
+.txtarea {
+  background-color: #fafafb;
+  border: none;
+  height: fit-content;
+}
+
+.faqs {
+  margin: 70px 0;
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.item-header-collapse{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.usualquestions{
+  border: 1px solid #2C3E501A;
+  background-color:#ffff;
+  margin: 0 200px;
+  padding: 50px 30px;
+  border-radius: 30px;
+}
+
+.accordion-button{
+  font-weight: bold;
+}
+
+.accordion-button::after {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+.accordion-button:focus {
+  border-color: none !important;
+  border-color: none !important;
+  box-shadow: none !important;
+
+}
+.accordion-button:not(.collapsed) {
+  color: #2C3E50;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-button:not(.collapsed)::after {
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+}
+.startconver{
+  background-color: var(--colorText);
+  border-radius: 4px;
+  margin: 0;
+  width: 20%;
+  font-weight: 800;
+}
+
+.accordion{
+  margin-bottom: 50px;
+}
+
+.accordion-item {
+  padding: 10px;
+}
+
+
+@media (max-width:768px) {
+  .form-control,.txtarea,.desc {
+  width: 100%;
+  }
+  .desc {
+    font-size: 16px;
+  }
+  .title{
+
+    font-size: 24px;
+  }
+  .faqs{
+    margin: 30px 0;
+    font-size: 20px;
+  }
+  .startconver{
+    background-color: var(--colorText);
+    border-radius: 4px;
+    margin: 0;
+    width: 100%;
+    font-weight: 800;
+  }
+  .accordion{
+    margin-bottom: 30px;
+  }
+  .accordion-item {
+    padding: 5px;
+  }
+}

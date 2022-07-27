@@ -5,6 +5,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { FilterComponent } from './component/filter/filter.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
+import { ContactusComponent } from './pages/contactus/contactus.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ShopixComponent } from './pages/shopix/shopix.component';
 import { ShopixproductsComponent } from './pages/shopixproducts/shopixproducts.component';
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path:'shopixservicesdetails',
     component:ShopixservicesdetailsComponent,
+  },
+  {
+    path:'contact',
+    component:ContactusComponent,
   },
   {
     path:'notfound',
