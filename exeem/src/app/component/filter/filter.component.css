@@ -9,6 +9,7 @@
   right: 0;
   height: 80vh;
   z-index: -1;
+  width: 100%;
 }
 
 #bgimageleft{
@@ -106,6 +107,9 @@ z-index: -1;
 }
 
 @media (max-width:768px) {
+  .searchinput{
+    width: 90% !important;
+  }
   .searchlogo{
     height: 65px;
   }
