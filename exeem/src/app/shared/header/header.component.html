@@ -1,5 +1,5 @@
 <!-- start header -->
-  <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top m-0 p-1">
+  <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top m-0 p-0">
     <div class="container">
         <i class="fas fa-bars  fa-2x mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
         <a routerLink="/home"> <img class="logo-navbar p-1" src="assets/images/logo/logo.png" width="130" height="60"
@@ -42,13 +42,13 @@
                   <div class="avatar" *ngIf="(isLogin$|async)as loginStatues">
                     <p class="letter">أ</p>
                   </div>
-                    <div class="d-flex textWelcome" *ngIf="(isLogin$|async)as loginStatues">
-                      <p class="wel">أهلاً <span>أحمد!</span></p>
-                      <i class="chevron-i fa fa-chevron-down d-flex mt-1 m-1"style="display: block !important;"></i>
+                    <div class="d-flex textWelcome align-items-center" *ngIf="(isLogin$|async)as loginStatues">
+                      <p class="wel m-0 p-0">أهلاً <br><p class="m-0 p-0">أحمد!</p></p>
+                      <i class="chevron-i fas fa-caret-down d-flex mt-3 me-2"style="display: block !important;"></i>
                     </div>
                 </a>
             </li>
-            <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1">
+            <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1" *ngIf="(isLogin$|async)as loginStatues">
                 <li>
                     <a class="dropdown-item hover-it">
                       حسابي
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                     <a class="dropdown-item hover-it">
-                      <button (click)="logout()">تسجيل الخروج</button>
+                      <button class="btnLogout border-0" (click)="logout()">تسجيل الخروج</button>
                     </a>
                 </li>
             </ul>

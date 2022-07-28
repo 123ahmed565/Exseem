@@ -21,9 +21,13 @@ export class ForgetpasswordComponent implements OnInit {
 onSubmitForget() {
   if(this.forgetPasswordForm.valid){
     this.api.forget(this.forgetPasswordForm.value).subscribe((res:any)=>{
-      alert(JSON.stringify(res));
-
-        alert('سيتم ارسال الرقم السري ع البريد الالكترونى الخاص بك  ان وجد');
+      if(res.statusMessage.includes("هذا الحساب ليس مشترك")){
+        alert(res.statusMessage);
+      }
+      else{
+        alert('برجاء التأكد من البريد الالكترونى الخاص بك لتغير كلمة السر')
+        this.router.navigate(['/login']);
+      }
     },
     (err:any)=>{
       console.log(err);

@@ -51,13 +51,13 @@ export class HeaderComponent implements OnInit {
 
         // this for top head when click on button categories
         $(document).on('click','.chevron-active',function(){
-          if($('.chevron-i').hasClass('fa-chevron-down')){
-          $('.chevron-i').removeClass('fa-chevron-down');
-          $('.chevron-i').addClass('fa-chevron-up');
+          if($('.chevron-i').hasClass('fa-caret-down')){
+          $('.chevron-i').removeClass('fa-caret-down');
+          $('.chevron-i').addClass('fa-caret-up');
           }
           else{
-              $('.chevron-i').addClass('fa-chevron-down');
-              $('.chevron-i').removeClass('fa-chevron-up');
+              $('.chevron-i').addClass('fa-caret-down');
+              $('.chevron-i').removeClass('fa-caret-up');
           }
         });
   }

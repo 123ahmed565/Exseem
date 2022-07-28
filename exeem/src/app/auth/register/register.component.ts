@@ -14,11 +14,13 @@ export class RegisterComponent implements OnInit {
   constructor(private router:Router, private api:ServService) { }
 
   registerForm = new FormGroup({
-    // name: new FormControl('', Validators.minLength(2)),
-    email: new FormControl('', [Validators.email,Validators.required]),
+    firstname: new FormControl('', [Validators.minLength(3),Validators.pattern('^[a-zA-Z \-\']+')]),
+    lastname: new FormControl('', [Validators.minLength(3),Validators.pattern('^[a-zA-Z \-\']+')]),
+    email: new FormControl('', [Validators.email,Validators.required],),
     phoneNumber: new FormControl('', [Validators.pattern('^01[0-2,5]{1}[0-9]{8}'),Validators.required]),
     password: new FormControl('',Validators.required),
     confirmPassword: new FormControl('',Validators.required),
+    job: new FormControl('',Validators.required),
 });
 
 
