@@ -47,6 +47,19 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
         // check for if login remove button login from header
         this.isLogin$=this.api.isLoggedIn
+
+
+        // this for top head when click on button categories
+        $(document).on('click','.chevron-active',function(){
+          if($('.chevron-i').hasClass('fa-chevron-down')){
+          $('.chevron-i').removeClass('fa-chevron-down');
+          $('.chevron-i').addClass('fa-chevron-up');
+          }
+          else{
+              $('.chevron-i').addClass('fa-chevron-down');
+              $('.chevron-i').removeClass('fa-chevron-up');
+          }
+        });
   }
 
 }

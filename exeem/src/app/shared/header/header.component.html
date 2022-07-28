@@ -34,19 +34,47 @@
             </div>
         </div>
         <div class="auth">
+          <!-- welcome dropdown -->
+          <div class="dropdown">
+            <li class="nav-item d-none d-sm-block d-flex" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link d-flex align-items-center chevron-active" href="#">
+                  <div class="avatar" *ngIf="(isLogin$|async)as loginStatues">
+                    <p class="letter">أ</p>
+                  </div>
+                    <div class="d-flex textWelcome" *ngIf="(isLogin$|async)as loginStatues">
+                      <p class="wel">أهلاً <span>أحمد!</span></p>
+                      <i class="chevron-i fa fa-chevron-down d-flex mt-1 m-1"style="display: block !important;"></i>
+                    </div>
+                </a>
+            </li>
+            <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1">
+                <li>
+                    <a class="dropdown-item hover-it">
+                      حسابي
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item hover-it">معاملاتى</a>
+                </li>
+                <li>
+                    <a class="dropdown-item hover-it">
+                      <button (click)="logout()">تسجيل الخروج</button>
+                    </a>
+                </li>
+            </ul>
+          </div>
           <!-- avatar profile -->
-          <div class="d-flex align-items-center">
-            <!-- avatar -->
+          <!-- <div class="d-flex align-items-center">
             <div class="avatar" *ngIf="(isLogin$|async)as loginStatues">
               <p class="letter">أ</p>
               <button (click)="logout()">remove</button>
             </div>
-            <!-- wellcome -->
             <div class="d-block textWelcome" *ngIf="(isLogin$|async)as loginStatues">
               <p class="m-0 p-0 wel">مرحبا,</p>
               <p class="name">أحمد سراج</p>
             </div>
-          </div>
+          </div> -->
           <!-- button login -->
           <button *ngIf="!(isLogin$|async)as loginStatues" class="btnLogin" onclick="window.location.href='/login'">دخـول</button>
           <!-- button login free -->
