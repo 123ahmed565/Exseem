@@ -39,16 +39,16 @@
             <li class="nav-item d-none d-sm-block d-flex" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <a class="nav-link d-flex align-items-center chevron-active" href="#">
-                  <div class="avatar" *ngIf="(isLogin$|async)as loginStatues">
+                  <div class="avatar" *ngIf="isLogin">
                     <p class="letter">أ</p>
                   </div>
-                    <div class="d-flex textWelcome align-items-center" *ngIf="(isLogin$|async)as loginStatues">
+                    <div class="d-flex textWelcome align-items-center" *ngIf="isLogin">
                       <p class="wel m-0 p-0">أهلاً <br><p class="m-0 p-0">أحمد!</p></p>
                       <i class="chevron-i fas fa-caret-down d-flex mt-3 me-2"style="display: block !important;"></i>
                     </div>
                 </a>
             </li>
-            <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1" *ngIf="(isLogin$|async)as loginStatues">
+            <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1" *ngIf="isLogin">
                 <li>
                     <a class="dropdown-item hover-it">
                       حسابي
@@ -76,9 +76,9 @@
             </div>
           </div> -->
           <!-- button login -->
-          <button *ngIf="!(isLogin$|async)as loginStatues" class="btnLogin" onclick="window.location.href='/login'">دخـول</button>
+          <button *ngIf="!isLogin" class="btnLogin" onclick="window.location.href='/login'">دخـول</button>
           <!-- button login free -->
-          <button *ngIf="!(isLogin$|async)as loginStatues" class="btnLoginFree" onclick="window.location.href='/register'">سجل الأن مجانا</button>
+          <button *ngIf="!isLogin" class="btnLoginFree" onclick="window.location.href='/register'">سجل الأن مجانا</button>
         </div>
     </div>
   </nav>

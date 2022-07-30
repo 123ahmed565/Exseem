@@ -42,6 +42,12 @@ onSubmitLogin() {
         // check for if login remove button login from header
         this.api.loginn();
 
+        // local storage token
+        localStorage.setItem('userlogintoken', JSON.stringify(res.token));
+        localStorage.setItem('isLogin', JSON.stringify(true));
+
+
+
         alert("تم تسجيل دخولك بنجاح");
         this.router.navigate(['/home']);
       }
