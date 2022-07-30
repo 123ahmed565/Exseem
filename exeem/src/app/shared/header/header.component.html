@@ -40,10 +40,10 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <a class="nav-link d-flex align-items-center chevron-active" href="#">
                   <div class="avatar" *ngIf="isLogin">
-                    <p class="letter">أ</p>
+                    <p class="letter">{{usercharchter}}</p>
                   </div>
                     <div class="d-flex textWelcome align-items-center" *ngIf="isLogin">
-                      <p class="wel m-0 p-0">أهلاً <br><p class="m-0 p-0">أحمد!</p></p>
+                      <p class="wel m-0 p-0">أهلاً <br><p class="m-0 p-0">{{username}}!</p></p>
                       <i class="chevron-i fas fa-caret-down d-flex mt-3 me-2"style="display: block !important;"></i>
                     </div>
                 </a>

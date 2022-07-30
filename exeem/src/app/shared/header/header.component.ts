@@ -20,11 +20,19 @@ export class HeaderComponent implements OnInit {
       this.api.logout();
       localStorage.removeItem('isLogin')
       this.isLogin=false
+      // remove data local storage
+      localStorage.removeItem('name')
+      localStorage.removeItem('character')
     }
 
   upBtn: Boolean = false;
   test: Boolean = false;
+  // local storage
   isLogin: Boolean = false;
+
+  // create var to put name & charchter
+  username:any;
+  usercharchter:any;
 
   constructor(private api:ServService) {
     document.addEventListener('scroll', (e) => {
@@ -56,6 +64,15 @@ export class HeaderComponent implements OnInit {
     localStorage.getItem('isLogin');
     if(localStorage.getItem('isLogin')){
     this.isLogin=true
+    }
+
+
+    // put name & charchter in header
+    if(localStorage.getItem('name')){
+      this.username=localStorage.getItem('name');
+    }
+    if(localStorage.getItem('character')){
+      this.usercharchter=localStorage.getItem('character');
     }
 
 

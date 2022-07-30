@@ -46,6 +46,9 @@ onSubmitLogin() {
         localStorage.setItem('userlogintoken', JSON.stringify(res.token));
         localStorage.setItem('isLogin', JSON.stringify(true));
 
+        // put name & charchter in header
+        localStorage.setItem('name',res.name);
+        localStorage.setItem('character', res.character);
 
 
         alert("تم تسجيل دخولك بنجاح");
