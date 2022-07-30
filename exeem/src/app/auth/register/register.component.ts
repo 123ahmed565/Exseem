@@ -14,8 +14,8 @@ export class RegisterComponent implements OnInit {
   constructor(private router:Router, private api:ServService) { }
 
   registerForm = new FormGroup({
-    firstname: new FormControl('', [Validators.minLength(3),Validators.pattern('^[a-zA-Z \-\']+')]),
-    lastname: new FormControl('', [Validators.minLength(3),Validators.pattern('^[a-zA-Z \-\']+')]),
+    firstname: new FormControl('', [Validators.minLength(3),Validators.pattern('^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z]+[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z-_]*')]),
+    lastname: new FormControl('', [Validators.minLength(3),Validators.pattern('^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z]+[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z-_]*')]),
     email: new FormControl('', [Validators.email,Validators.required],),
     phoneNumber: new FormControl('', [Validators.pattern('^01[0-2,5]{1}[0-9]{8}'),Validators.required]),
     password: new FormControl('',Validators.required),
