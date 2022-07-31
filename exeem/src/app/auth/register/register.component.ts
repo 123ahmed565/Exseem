@@ -53,7 +53,6 @@ onSubmitRegister() {
         console.log(err);
       }
       )
-
     }
     else{
       alert("الرقم السري غير متطابق");
@@ -63,6 +62,7 @@ onSubmitRegister() {
 
 
   ngOnInit(): void {
+
   }
 
 }

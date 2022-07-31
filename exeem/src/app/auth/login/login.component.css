@@ -35,8 +35,9 @@
   font-size: 12px;
   text-decoration: underline;
   cursor: pointer;
-  margin-right: 45%;
+  margin-left: 43%;
 }
+
 
 .textLog{
   font-weight: 400;
@@ -57,7 +58,7 @@
   font-size: 12px;
   font-weight: 800;
   position: relative;
-  left: 68px;
+  left: 66px;
   bottom: 7px;
 }
 

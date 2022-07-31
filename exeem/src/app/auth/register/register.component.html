@@ -8,25 +8,18 @@
         <h1 class="textRegister"> انشاء <span class="textRegister2">حساب جديد</span></h1>
         <p class="line"></p>
 
-        <!-- first & last name -->
-        <div class="d-flex justify-content-center">
-          <div class="form-group">
-            <input formControlName="firstname" type="text" id="" placeholder="الأسم الأول" required>
-            <br>
-            <small *ngIf="registerForm.get('firstname')?.invalid &&registerForm.get('firstname')?.touched" class="text-danger validationText">*برجاء ادخال الاسم صحيح</small>
-          </div>
-          <div class="form-group">
-            <input formControlName="lastname" type="text" id="" placeholder="الأسم التانى" required>
-            <br>
-            <small *ngIf="registerForm.get('lastname')?.invalid &&registerForm.get('lastname')?.touched" class="text-danger validationText">*برجاء ادخال الاسم صحيح</small>
-          </div>
+        <!-- first name -->
+        <div class="form-group">
+          <input formControlName="firstname" type="text" id="" placeholder="الأسم الأول" required>
+          <br>
+          <small *ngIf="registerForm.get('firstname')?.invalid &&registerForm.get('firstname')?.touched" class="text-danger validationText">*برجاء ادخال الاسم صحيح</small>
         </div>
 
-        <!-- job -->
+        <!--last name -->
         <div class="form-group">
-          <input formControlName="job" type="text" id="" placeholder="الوظيفة" required>
+          <input formControlName="lastname" type="text" id="" placeholder="الأسم التانى" required>
           <br>
-          <small *ngIf="registerForm.get('job')?.invalid &&registerForm.get('job')?.touched" class="text-danger validationText">* برجاء ادخال الوظيفة</small>
+          <small *ngIf="registerForm.get('lastname')?.invalid &&registerForm.get('lastname')?.touched" class="text-danger validationText">*برجاء ادخال الاسم صحيح</small>
         </div>
 
         <!-- email -->
@@ -41,6 +34,13 @@
           <input formControlName="phoneNumber" type="text" id="" placeholder="رقم الهاتف" required>
           <br>
           <small *ngIf="registerForm.get('phoneNumber')?.invalid &&registerForm.get('phoneNumber')?.touched" class="text-danger validationText">* برجاء ادخال رقم الهاتف  </small>
+        </div>
+
+        <!-- job -->
+        <div class="form-group">
+          <input formControlName="job" type="text" id="" placeholder="الوظيفة" required>
+          <br>
+          <small *ngIf="registerForm.get('job')?.invalid &&registerForm.get('job')?.touched" class="text-danger validationText">* برجاء ادخال الوظيفة</small>
         </div>
 
         <!-- password -->
@@ -58,7 +58,7 @@
         </div>
 
         <br>
-        <button class="btn mt-4 fw-bold" type="submit">تسجيل حساب</button>
+        <button class="btn mt-2 fw-bold" type="submit">تسجيل حساب</button>
         <a routerLink="/login">
           <h1 class="textLogin mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="لدى حساب؟ تسجيل دخول">
             <span class="haveAccount">لدى حساب؟</span> تسجيل دخول

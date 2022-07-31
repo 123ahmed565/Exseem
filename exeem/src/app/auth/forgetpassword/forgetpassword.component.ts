@@ -25,8 +25,10 @@ onSubmitForget() {
         alert(res.statusMessage);
       }
       else{
-        alert('برجاء التأكد من البريد الالكترونى الخاص بك لتغير كلمة السر')
-        this.router.navigate(['/login']);
+        if(res.statusMessage.includes("لقد تم ارسال رساله علي البريد الالكتروني")){
+          alert(res.statusMessage);
+          this.router.navigate(['/login']);
+        }
       }
     },
     (err:any)=>{
