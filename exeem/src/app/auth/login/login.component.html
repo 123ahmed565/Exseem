@@ -19,9 +19,9 @@
           <small *ngIf="loginForm.get('password')?.invalid &&loginForm.get('password')?.touched" class="text-danger validationText">* برجاء ادخال كلمة السر </small>
         </div>
 
-        <a routerLink="/forgetpassword">
-          <h1 class="forgetPassword">نسيت كلمة سر!</h1>
-        </a>
+
+        <h1 class="forgetPassword"> <a routerLink="/forgetpassword">نسيت كلمة سر!</a> </h1>
+
         <button class="btn mt-4" type="submit">تسجيل الدخول</button>
         <a routerLink="/register">
           <h1 class="textLog mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="ليس لدى حساب؟ انشاء حساب جديد">
