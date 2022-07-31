@@ -113,16 +113,16 @@
 
 .avatar{
   background-color: #ffeae5;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   text-align: center;
-  padding: 3px;
+  padding: 6px;
 }
 
 .letter{
   font-weight: 800;
-  font-size: 18px;
+  font-size: 26px;
 }
 
 .textWelcome{
@@ -131,7 +131,12 @@
 
 .wel{
   font-weight: 500;
+  font-size: 12px;
+}
+
+.tx{
   font-size: 14px;
+  font-weight: 700;
 }
 
 .btnLogout{

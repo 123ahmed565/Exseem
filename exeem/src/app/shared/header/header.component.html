@@ -43,7 +43,10 @@
                     <p class="letter">{{usercharchter}}</p>
                   </div>
                     <div class="d-flex textWelcome align-items-center" *ngIf="isLogin">
-                      <p class="wel m-0 p-0">أهلاً <br><p class="m-0 p-0">{{username}}!</p></p>
+                      <div class="d-block">
+                        <p class="wel m-0 p-0">أهلاً</p>
+                        <p class="tx m-0 p-0">{{username}}!</p>
+                      </div>
                       <i class="chevron-i fas fa-caret-down d-flex mt-3 me-2"style="display: block !important;"></i>
                     </div>
                 </a>
@@ -78,7 +81,7 @@
           <!-- button login -->
           <button *ngIf="!isLogin" class="btnLogin" onclick="window.location.href='/login'">دخـول</button>
           <!-- button login free -->
-          <button *ngIf="!isLogin" class="btnLoginFree" onclick="window.location.href='/login'">سجل الأن مجانا</button>
+          <button *ngIf="!isLogin" class="btnLoginFree" onclick="window.location.href='/register'">سجل الأن مجانا</button>
         </div>
     </div>
   </nav>
