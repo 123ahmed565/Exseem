@@ -14,6 +14,8 @@ import { ShopixproductsdetailsComponent } from './pages/shopixproductsdetails/sh
 import { ShopixservicesComponent } from './pages/shopixservices/shopixservices.component';
 import { ShopixservicesdetailsComponent } from './pages/shopixservicesdetails/shopixservicesdetails.component';
 
+
+
 const routes: Routes = [
   {
     path:'',
@@ -22,7 +24,7 @@ const routes: Routes = [
   },
   {
     path:'home',
-    component:HomeComponent
+    component:HomeComponent,
   },
   {
     path:'login',
