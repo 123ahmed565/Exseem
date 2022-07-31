@@ -117,7 +117,7 @@
   height: 35px;
   border-radius: 50%;
   text-align: center;
-  padding: 6px;
+  padding: 3px;
 }
 
 .letter{
@@ -145,6 +145,10 @@
 .dropdown-menu[data-bs-popper] {
   top: 70px !important;
   padding: 6px !important ;
+}
+
+.auth{
+  margin-bottom: 11px;
 }
 
 @media (min-width:768px) {

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ForgetpasswordComponent } from './auth/forgetpassword/forgetpassword.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { ResetpasswordComponent } from './auth/resetpassword/resetpassword.component';
 import { FilterComponent } from './component/filter/filter.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path:'forgetpassword',
     component:ForgetpasswordComponent,
+  },
+  {
+    path:'resetpassword',
+    component:ResetpasswordComponent,
   },
   {
     path:'filter',
