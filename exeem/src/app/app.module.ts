@@ -30,6 +30,7 @@ import { ShopixservicesdetailsComponent } from './pages/shopixservicesdetails/sh
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { ResetpasswordComponent } from './auth/resetpassword/resetpassword.component';
 import { NewsdetailsComponent } from './pages/newsdetails/newsdetails.component';
+import { ConfirmemailComponent } from './auth/confirmemail/confirmemail.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { NewsdetailsComponent } from './pages/newsdetails/newsdetails.component'
     ContactusComponent,
     ResetpasswordComponent,
     NewsdetailsComponent,
+    ConfirmemailComponent,
   ],
   imports: [
     BrowserModule,

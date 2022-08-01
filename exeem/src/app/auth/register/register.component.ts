@@ -43,7 +43,7 @@ onSubmitRegister() {
         }
         else{
           alert('تم تسجيلك الحساب');
-          this.router.navigate(['/login']);
+          this.router.navigate(['/confirmemail']);
         }
       },
       (err:any)=>{

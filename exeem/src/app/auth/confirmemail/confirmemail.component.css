@@ -1,0 +1,48 @@
+.data{
+  position: absolute;
+  right: 28%;
+  top: 30%;
+  text-align: center;
+}
+
+.logo{
+  width: 180px;
+  height: 75px;
+  position: relative;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.subtitle{
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.downTitle{
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.downTitle2{
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.line{
+  border: 1px solid var(--primary);
+  width: 65%;
+  margin: auto;
+}
+
+.goBack{
+  text-decoration: underline;
+  font-weight: bolder;
+  color: black;
+}
