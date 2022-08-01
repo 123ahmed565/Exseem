@@ -29,6 +29,7 @@ import { FilterservicesComponent } from './component/filterservices/filterservic
 import { ShopixservicesdetailsComponent } from './pages/shopixservicesdetails/shopixservicesdetails.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { ResetpasswordComponent } from './auth/resetpassword/resetpassword.component';
+import { NewsdetailsComponent } from './pages/newsdetails/newsdetails.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { ResetpasswordComponent } from './auth/resetpassword/resetpassword.compo
     ShopixservicesdetailsComponent,
     ContactusComponent,
     ResetpasswordComponent,
+    NewsdetailsComponent,
   ],
   imports: [
     BrowserModule,

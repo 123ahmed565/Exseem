@@ -8,6 +8,7 @@ import { FilterComponent } from './component/filter/filter.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NewsdetailsComponent } from './pages/newsdetails/newsdetails.component';
 import { ShopixComponent } from './pages/shopix/shopix.component';
 import { ShopixproductsComponent } from './pages/shopixproducts/shopixproducts.component';
 import { ShopixproductsdetailsComponent } from './pages/shopixproductsdetails/shopixproductsdetails.component';
@@ -69,6 +70,10 @@ const routes: Routes = [
   {
     path:'contact',
     component:ContactusComponent,
+  },
+  {
+    path:'newdetails',
+    component:NewsdetailsComponent,
   },
   {
     path:'notfound',

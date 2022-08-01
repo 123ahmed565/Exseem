@@ -38,7 +38,7 @@
           }"
         >
         <ng-template swiperSlide *ngFor="let item of datanews">
-          <!-- <div  [ngClass]="{'d-none' : !item.urlToImage}"> -->
+          <a routerLink="/newdetails">
             <img class="imgNews" [src]="item.urlToImage" alt="news image" loading="lazy">
             <h1 class="title mt-2">{{item.title}}</h1>
             <p class="subTitle m-0 p-0">{{item.description}}</p>
@@ -46,7 +46,7 @@
               <p>{{item.publishedAt}}</p>
               <p class="readMore">قراءة المزيد <i class="fas fa-arrow-left text-black m-1"></i></p>
             </div>
-          <!-- </div> -->
+          </a>
         </ng-template>
         </swiper>
       </div>
