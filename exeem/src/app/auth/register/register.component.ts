@@ -42,6 +42,9 @@ onSubmitRegister() {
           alert(res.statusMessage);
         }
         else{
+          // locale storage for send email to another page
+          localStorage.setItem('email',data.email);
+
           alert('تم تسجيلك الحساب');
           this.router.navigate(['/confirmemail']);
         }

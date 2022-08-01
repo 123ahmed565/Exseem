@@ -12,11 +12,12 @@ export class AuthGuard implements CanActivate {
   constructor(private apiService: ServService, private _router: Router) {}
 
   canActivate(){
-    if(this.apiService.isLoggedIn){
-      return true;
+    if(localStorage.getItem('userlogintoken')){
+      this._router.navigate(['/notfound'])
+      return false;
     }
-    this._router.navigate(['/notfound'])
-    return false;
+    return true;
+
   }
 }
 

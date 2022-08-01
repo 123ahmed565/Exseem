@@ -7,6 +7,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { ResetpasswordComponent } from './auth/resetpassword/resetpassword.component';
 import { FilterComponent } from './component/filter/filter.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
+import { AuthGuard } from './guard/auth.guard';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NewsdetailsComponent } from './pages/newsdetails/newsdetails.component';
@@ -31,6 +32,8 @@ const routes: Routes = [
   {
     path:'login',
     component:LoginComponent,
+    canActivate: [AuthGuard],
+
   },
   {
     path:'register',

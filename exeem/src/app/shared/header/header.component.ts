@@ -19,6 +19,7 @@ export class HeaderComponent implements OnInit {
     logout():void{
       this.api.logout();
       localStorage.removeItem('isLogin')
+      localStorage.removeItem('userlogintoken ')
       this.isLogin=false
       // remove data local storage
       localStorage.removeItem('name')
