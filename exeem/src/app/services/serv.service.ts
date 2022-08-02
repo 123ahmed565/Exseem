@@ -42,6 +42,11 @@ export class ServService {
     return this.http.post(`${this.BASE_URL}/api/Accounts/ForgotPassword`,data);
   }
 
+  // after verified
+  verified(){
+    return this.http.get(`${this.BASE_URL}/api/Accounts/afterverfied`);
+  }
+
   ///////////////////////////////////////////// authentication ////////////////////////////////////////
 
 
