@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
 import { FormGroup, FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { ServService } from 'src/app/services/serv.service';
 
 
@@ -12,16 +12,29 @@ import { ServService } from 'src/app/services/serv.service';
 })
 export class ResetpasswordComponent implements OnInit {
 
-  constructor(private router:Router, private api:ServService) { }
+  urlParams:any={};
 
-  resetForm = new FormGroup({
+
+  constructor(private router:Router, private api:ServService,private activatedRoute: ActivatedRoute) { }
+
+  updatee=[this.urlParams.token=this.activatedRoute.snapshot.queryParamMap.get('token'),this.urlParams.email=this.activatedRoute.snapshot.queryParamMap.get('email')];
+
+
+    resetForm = new FormGroup({
     password: new FormControl('',Validators.required),
     confirmpassword: new FormControl('',Validators.required),
+    token: new FormControl(this.urlParams.token,Validators.required),
+    email: new FormControl(this.urlParams.email,Validators.required),
+
 });
 
-// login validations
+
+
+// reset validations
 reset() {
   let  data = this.resetForm.value;
+
+  console.log(data);
 
   if(this.resetForm.invalid){
     alert('من فضلك ادخل جميع بياناتك')
@@ -29,6 +42,9 @@ reset() {
   else{
     if(data.password===data.confirmpassword)
     {
+    this.api.verified(data).subscribe((res:any)=>{
+
+    })
       alert('تم تسجيلك الحساب');
       this.router.navigate(['/login']);
     }
@@ -40,6 +56,7 @@ reset() {
 }
 
   ngOnInit(): void {
+    alert(this.updatee);
   }
 
 }

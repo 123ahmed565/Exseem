@@ -43,8 +43,14 @@ export class ServService {
   }
 
   // after verified
-  verified(){
-    return this.http.get(`${this.BASE_URL}/api/Accounts/afterverfied`);
+  verified(data:any){
+    return this.http.get(`${this.BASE_URL}/api/Accounts/afterverfied?token=${data.token}&userid=${data.userid}`);
+  }
+
+
+  // reser paasowrd
+  reset(data:any){
+    return this.http.post(`${this.BASE_URL}/api/Accounts/ResetPassword`,data);
   }
 
   ///////////////////////////////////////////// authentication ////////////////////////////////////////

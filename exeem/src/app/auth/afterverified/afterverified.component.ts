@@ -23,8 +23,8 @@ export class AfterverifiedComponent implements OnInit {
 
 
   verified() {
-    this.api.verified().subscribe((res:any)=>{
-      // this.data=res;
+    this.api.verified(this.data).subscribe((res:any)=>{
+
     }
   )}
 

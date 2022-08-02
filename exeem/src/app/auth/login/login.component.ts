@@ -39,6 +39,9 @@ onSubmitLogin() {
       else if(res.statusMessage.includes("الرقم السري غير صحيح")){
         alert(res.statusMessage);
       }
+      else if(res.statusMessage.includes("هذا البريد الالكتروني غير موكد")){
+        alert(res.statusMessage);
+      }
       else{
         // check for if login remove button login from header
         this.api.loginn();
