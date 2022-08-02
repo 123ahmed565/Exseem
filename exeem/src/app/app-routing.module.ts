@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AfterverifiedComponent } from './auth/afterverified/afterverified.component';
 import { ConfirmemailComponent } from './auth/confirmemail/confirmemail.component';
 import { ForgetpasswordComponent } from './auth/forgetpassword/forgetpassword.component';
 import { LoginComponent } from './auth/login/login.component';
@@ -32,7 +33,7 @@ const routes: Routes = [
   {
     path:'login',
     component:LoginComponent,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
 
   },
   {
@@ -50,6 +51,12 @@ const routes: Routes = [
   {
     path:'confirmemail',
     component:ConfirmemailComponent,
+    // canActivate: [AuthGuard],
+  },
+  {
+    path:'afterverfied',
+    component:AfterverifiedComponent,
+    // canActivate: [AuthGuard],
   },
   {
     path:'filter',

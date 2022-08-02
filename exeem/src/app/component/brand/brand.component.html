@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="sponsored ">
+    <p class="title">شركائنا <span class="txtorange">في النجاح</span></p>
+    <div class="row align-items-center">
+      <div class="col-12 col-md-2">
+        <p class="happy">سعداء<br class="br"> بالعمل مع</p>
+      </div>
+      <div class="col-12 col-md-10">
+        <swiper [slidesPerView]="5" [spaceBetween]="10" [loop]="true"  [centeredSlides]="true" [breakpoints]="{
+          '0': {
+            slidesPerView: 2.1,
+            spaceBetween: 10
+          },
+          '600': {
+            slidesPerView: 2.5,
+            spaceBetween: 10
+          },
+          '1000': {
+            slidesPerView: 4.5,
+            spaceBetween: 10
+          }
+        }" [autoplay]="{
+          delay: 3000,
+          disableOnInteraction: false
+          }">
+          <ng-template swiperSlide>
+            <div class="mx-auto d-block">
+              <img class="sponsoredimg" draggable="false" src="assets/images/brand/1.png" alt="sponsore image" loading="lazy">
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="mx-auto d-block">
+              <img class="sponsoredimg" draggable="false" src="assets/images/brand/2.png" alt="sponsore image" loading="lazy">
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="mx-auto d-block">
+              <img class="sponsoredimg" draggable="false" src="assets/images/brand/3.png" alt="sponsore image" loading="lazy">
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="mx-auto d-block">
+              <img class="sponsoredimg" draggable="false" src="assets/images/brand/4.png" alt="sponsore image" loading="lazy">
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="mx-auto d-block">
+              <img class="sponsoredimg" draggable="false" src="assets/images/brand/5.png" alt="sponsore image" loading="lazy">
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </div>
+  </div>
+</div>

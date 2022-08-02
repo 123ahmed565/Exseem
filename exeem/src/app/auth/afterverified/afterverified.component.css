@@ -9,7 +9,7 @@ body {
 
 .data{
   position: absolute;
-  right: 23.5%;
+  right: 43%;
   top: 30%;
   text-align: center;
   color: white;
@@ -56,3 +56,25 @@ body {
   font-weight: bolder;
   color: var(--colorText);
 }
+
+.btnLogin{
+  border: none;
+  box-shadow: none;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.btnLogin:hover{
+  border: none;
+  box-shadow: none;
+  background-color: var(--colorText);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: .3s all ease-in-out;
+}
+

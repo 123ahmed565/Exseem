@@ -31,6 +31,8 @@ import { ContactusComponent } from './pages/contactus/contactus.component';
 import { ResetpasswordComponent } from './auth/resetpassword/resetpassword.component';
 import { NewsdetailsComponent } from './pages/newsdetails/newsdetails.component';
 import { ConfirmemailComponent } from './auth/confirmemail/confirmemail.component';
+import { BrandComponent } from './component/brand/brand.component';
+import { AfterverifiedComponent } from './auth/afterverified/afterverified.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,8 @@ import { ConfirmemailComponent } from './auth/confirmemail/confirmemail.componen
     ResetpasswordComponent,
     NewsdetailsComponent,
     ConfirmemailComponent,
+    BrandComponent,
+    AfterverifiedComponent,
   ],
   imports: [
     BrowserModule,

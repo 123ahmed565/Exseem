@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-confirmemail',
   templateUrl: './confirmemail.component.html',
-  styleUrls: ['./confirmemail.component.css']
+  styleUrls: ['./confirmemail.component.css'],
+  encapsulation: ViewEncapsulation.None
+
 })
 export class ConfirmemailComponent implements OnInit {
 
@@ -13,10 +15,10 @@ export class ConfirmemailComponent implements OnInit {
   constructor(private router:Router,) { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      localStorage.removeItem('email');
-      this.router.navigate(['/login']);
-    }, 7000);
+    // setTimeout(() => {
+    //   localStorage.removeItem('email');
+    //   this.router.navigate(['/login']);
+    // }, 7000);
 
     // locale storage for send email to another page
     this.getData = localStorage.getItem('email');
