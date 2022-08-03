@@ -18,11 +18,11 @@ export class AfterverifiedComponent implements OnInit {
 
   constructor(private api:ServService,private activatedRoute: ActivatedRoute) {}
 
-  data=[this.urlParams.token=this.activatedRoute.snapshot.queryParamMap.get('token'),this.urlParams.userid=this.activatedRoute.snapshot.queryParamMap.get('userid')];
+  data=[this.urlParams.token=this.activatedRoute.snapshot.queryParamMap.get('token'),this.urlParams.userId=this.activatedRoute.snapshot.queryParamMap.get('userid')];
 
   afterverify = new FormGroup({
     token: new FormControl(this.urlParams.token,Validators.required),
-    email: new FormControl(this.urlParams.userid,Validators.required),
+    userId: new FormControl(this.urlParams.userId,Validators.required),
 });
 
     verified() {
