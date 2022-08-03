@@ -11,6 +11,7 @@ import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.com
 import { AuthGuard } from './guard/auth.guard';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MakeorderComponent } from './pages/makeorder/makeorder.component';
 import { NewsdetailsComponent } from './pages/newsdetails/newsdetails.component';
 import { ShopixComponent } from './pages/shopix/shopix.component';
 import { ShopixproductsComponent } from './pages/shopixproducts/shopixproducts.component';
@@ -69,6 +70,10 @@ const routes: Routes = [
   {
     path:'shopixproducts',
     component:ShopixproductsComponent,
+  },
+  {
+    path:'makeordernow',
+    component:MakeorderComponent,
   },
   {
     path:'shopixproductsdetails',
