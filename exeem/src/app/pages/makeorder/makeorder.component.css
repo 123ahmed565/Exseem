@@ -127,6 +127,9 @@ opacity: 0.6;
   justify-content: flex-start;
   align-items: center;
 }
+.joinbr{
+  display: none;
+}
 .ordernowimgtext{
   margin-top: 10%;
   flex-direction: column;
@@ -149,4 +152,55 @@ margin-top: 1%;
 color: #666666;
 font-size: 20px;
 text-align: center;
+}
+@media (max-width:768px) {
+.imgordernow{
+  height: 287px;
+  width: 340px;
+}
+.btn-sm{
+  width: 100%;
+}
+.kindofactivity > p{
+  width: 100%;
+  font: normal normal bold 20px/47px Cairo;
+  opacity: 1;
+}
+.fcoloumn>p:nth-child(2){
+font-size: 17px;
+text-align: center;
+}
+.accordion {
+  width: 100%;
+}
+.scoloumn>p:nth-child(2){
+  font-size: 21px;
+  text-align: center;
+  }
+.fcoloumn>p:nth-child(3){
+  font-size: 16px;
+text-align: center;
+  }
+  .btn-2-prev,.btn-2-prev{
+    width: 50%;
+    margin: 0;
+  }
+  .joinbr{
+    display: block;
+  }
+  .imgdesc{
+    margin-bottom: 40px;
+  }
+.kindofactivity{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-end;
+}
+.logoimg{
+  width: 80px;
+}
+.form-control{
+  width: 180px;
+}
 }
