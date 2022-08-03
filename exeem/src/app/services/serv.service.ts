@@ -44,7 +44,7 @@ export class ServService {
 
   // after verified
   verified(data:any){
-    return this.http.get(`${this.BASE_URL}/api/Accounts/afterverfied?token=${data.token}&userid=${data.userid}`);
+    return this.http.post(`${this.BASE_URL}/api/Accounts/afterverfied`,data);
   }
 
 

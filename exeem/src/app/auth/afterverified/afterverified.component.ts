@@ -20,16 +20,22 @@ export class AfterverifiedComponent implements OnInit {
 
   data=[this.urlParams.token=this.activatedRoute.snapshot.queryParamMap.get('token'),this.urlParams.userid=this.activatedRoute.snapshot.queryParamMap.get('userid')];
 
+  afterverify = new FormGroup({
+    token: new FormControl(this.urlParams.token,Validators.required),
+    email: new FormControl(this.urlParams.userid,Validators.required),
+});
 
+    verified() {
+    this.api.verified(this.afterverify.value).subscribe((res:any)=>{
 
-  verified() {
-    this.api.verified(this.data).subscribe((res:any)=>{
-
+    },
+    (err:any)=>{
+      console.log(err);
     }
   )}
 
 
   ngOnInit(): void {
-    alert(this.data);
+    // alert(this.data);
   }
 }

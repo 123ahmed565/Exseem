@@ -42,11 +42,18 @@ reset() {
   else{
     if(data.password===data.confirmpassword)
     {
-    this.api.verified(data).subscribe((res:any)=>{
-
-    })
-      alert('تم تسجيلك الحساب');
-      this.router.navigate(['/login']);
+    this.api.reset(data).subscribe((res:any)=>{
+      if(res.statusMessage.includes("تم تغير الرقم السري بنجاح")){
+        alert(res.statusMessage);
+        this.router.navigate(['/login']);
+      }
+    },
+    (err:any)=>{
+      console.log(err);
+    }
+    )
+      // alert('تم تغيير كلمة السر');
+      // this.router.navigate(['/login']);
     }
     else{
       alert("الرقم السري غير متطابق");

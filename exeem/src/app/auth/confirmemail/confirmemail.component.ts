@@ -18,7 +18,7 @@ export class ConfirmemailComponent implements OnInit {
     // setTimeout(() => {
     //   localStorage.removeItem('email');
     //   this.router.navigate(['/login']);
-    // }, 7000);
+    // }, 9000);
 
     // locale storage for send email to another page
     this.getData = localStorage.getItem('email');
