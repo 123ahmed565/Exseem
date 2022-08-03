@@ -29,12 +29,18 @@ export class OurnewsComponent implements OnInit {
   constructor(private api:ServService) { }
 
   datanews:any;
+  newsEconomy:any;
 
   ngOnInit(): void {
     // get data from api ournews
     this.api.getNews().subscribe((res:any)=>{
       this.datanews=res.articles;
       // alert(JSON.stringify(res));
+    });
+
+    // get data from api new Economy
+    this.api.getNewEconomy().subscribe((res:any)=>{
+      this.newsEconomy=res;
     });
   }
 

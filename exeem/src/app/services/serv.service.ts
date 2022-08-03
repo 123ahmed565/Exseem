@@ -67,9 +67,14 @@ export class ServService {
 
   //////////////////////////////////////////// home page /////////////////////////////////////////////
 
-  // ournew
+  // ournew all
   getNews(){
     return this.http.get(`https://newsapi.org/v2/top-headlines?country=eg&apiKey=0a860a19f6374423b6723562624021ef`);
+  }
+
+  // ournew (ECONOMY)
+  getNewEconomy(){
+    return this.http.get(`${this.BASE_URL}/api/News/AllEconomie`);
   }
 
   //////////////////////////////////////////// home page /////////////////////////////////////////////
